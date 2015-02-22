@@ -1,0 +1,24 @@
+{
+  "name": "ucan",
+  "version": "0.0.1",
+  "description": "homepage for ucan event 2015",
+  "main": "gruntfile.js",
+  "author": "qiongxue",
+  "license": "BSD",
+  "devDependencies": {
+    "connect-livereload": "~0.3.2",
+    "grunt": "~0.4.1",
+    "grunt-contrib-compass": "~0.8.0",
+    "grunt-contrib-connect": "^0.9.0",
+    "grunt-contrib-copy": "~0.5.0",
+    "grunt-contrib-jshint": "~0.6.5",
+    "grunt-contrib-livereload": "~0.1.2",
+    "grunt-contrib-uglify": "~0.7.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "matchdep": "^0.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.alibaba-inc.com/mengyuan.wmy/ucan.git"
+  }
+}
