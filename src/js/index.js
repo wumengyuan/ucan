@@ -1,0 +1,3 @@
+$('#nav').onePageNav({
+    currentClass: 'active'
+});

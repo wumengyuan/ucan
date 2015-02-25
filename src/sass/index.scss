@@ -1,13 +1,20 @@
 @import "mixins";
 @import "compass/css3";
+@import "compass/utilities/sprites";
+
+$ucan-spacing: 5px;
+
+@import "ucan/*.png";
 
 /**
  * varibles
  */
 // COLORS
 
-// fonts
-$purple:#0b2999; // main color
+// fonts color
+$purple:#0b2998; // main color
+$yellow:#fea411;
+$blue:#25b0fc;
 $dark-gray:#555; // title
 $gray:#909090; // author/second part
 // bg
@@ -20,6 +27,13 @@ $border-color:#ddd;
 // HEIGHT
 $navbar-h:70px;
 
+// FONTS
+$sansFontFamily:Arial, "Hiragino Sans GB","Microsoft Yahei", "微软雅黑",sans-serif;
+$serifFontFamily:Georgia, "Times New Roman", Times, "SimSun","宋体",serif;
+$font-normal:14px;
+$font-lg:18px;
+$font-sm:12px;
+
 @include parallax-init;
 
 body {
@@ -28,24 +42,24 @@ body {
     background-position: -120px 0;
     background-repeat: no-repeat;
     overflow-x:hidden;
+    font-family: $sansFontFamily;
 }
-#page {
+#parallax {
     position: absolute;
     top:0;
     left:0;
     width: 100%;
     height: inherit;
     overflow-x:hidden;
+    z-index: -1000;
 }
 .bg-1-triangle {
-    @include parallax(-.5);
     position: absolute;
     left:0;
     top:0;
     width: 100%;
-    height: 100%;
-    background-image: url('../imgs/bg-1-triangle.png');
-    background-repeat: no-repeat;
+    height: inherit;
+    z-index: -1000;
 }
 .bg-2-hero {
     @include parallax(.2);
@@ -59,7 +73,7 @@ body {
     z-index: -100;
 }
 .bg-2-page {
-    @include parallax(-.8);
+    @include parallax(-.5);
     position: absolute;
     left:0;
     top:1000px;
@@ -70,8 +84,16 @@ body {
 }
 .container {
     width: 1000px;
+    padding-top: 10px;
     margin-left: auto;
     margin-right: auto;
+}
+.title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 140px;
+    height: 34px;
 }
 .navbar {
     position: fixed;
@@ -86,17 +108,24 @@ body {
         width: 96px;
         height: 45px;
         margin-top: 13px;
-        background-image: url('../imgs/ucanlogo.png');
+        @include ucan-sprite(ucanlogo);
     }
     .nav-items {
         float: right;
         color:$dark-gray;
+        font-size: 0;
         .nav-item {
             list-style: none;
             display: inline-block;
+            &:hover,&:focus, &.active {
+                color:$purple;
+                font-weight: bold;
+            }
             a {
                 display: inline-block;
                 text-align: center;
+                font-size: $font-normal;
+                font-weight: inherit;
                 width: 70px;
                 height: $navbar-h;
                 line-height: $navbar-h;
@@ -107,12 +136,13 @@ body {
     }
 }
 #hero {
-    @include parallax(-.05);
     display: block;
     width: 100%;
     height: 440px;
     margin-top: $navbar-h;
+    margin-bottom: 150px;
     z-index: 1000;
+    @include transform-style(flat);
     .container {
         position: relative;
     }
@@ -123,7 +153,8 @@ body {
         position: absolute;
         top:158px;
         left: 188px;
-        background-image: url("../imgs/hero-logo.png");
+        @include ucan-sprite(hero-logo);
+        @include transform-style(flat);
     }
     .sign-up-btn {
         display: block;
@@ -132,11 +163,38 @@ body {
         position: absolute;
         top:255px;
         right: 150px;
-        background-image: url('../imgs/signup.png');
-        background-repeat: no-repeat;
-        background-size: 117px 117px;
+        cursor:pointer;
+        @include ucan-sprite(signup);
         &:hover,&:focus {
-            background-image: url('../imgs/signup-hover.png');
+            @include ucan-sprite(signup-hover);
         }
+    }
+}
+section {
+    padding-top: 88px;
+}
+#agenda {
+    height: 1140px;
+    .title {
+        @include ucan-sprite(agenda-title);
+    }
+    // background-color: red;
+}
+
+#special-guest {
+    .title {
+        @include ucan-sprite(special-guest-title);
+    }
+}
+
+#guest {
+    .title {
+        @include ucan-sprite(guest-title);
+    }
+}
+
+#partner {
+    .title {
+        @include ucan-sprite(partner-title);
     }
 }

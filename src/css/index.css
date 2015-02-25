@@ -1,8 +1,14 @@
+@charset "UTF-8";
+/* line 136, ucan/*.png */
+.ucan-sprite, .navbar .logo, #hero .hero-logo, #hero .sign-up-btn, #hero .sign-up-btn:hover, #hero .sign-up-btn:focus, #agenda .title, #special-guest .title, #guest .title, #partner .title {
+  background-image: url('../imgs/ucan-s88e717db13.png');
+  background-repeat: no-repeat; }
+
 /**
  * varibles
  */
 /* line 21, ../sass/_mixins.scss */
-#page {
+#parallax {
   overflow: auto;
   -moz-perspective: 1px;
   -webkit-perspective: 1px;
@@ -11,43 +17,39 @@
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d; }
   /* line 30, ../sass/_mixins.scss */
-  #page, #page * {
+  #parallax, #parallax * {
     -moz-transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d; }
 
-/* line 25, ../sass/index.scss */
+/* line 39, ../sass/index.scss */
 body {
   height: 3878px;
   background-position: -120px 0;
   background-repeat: no-repeat;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-family: Arial, "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", sans-serif; }
 
-/* line 32, ../sass/index.scss */
-#page {
+/* line 47, ../sass/index.scss */
+#parallax {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: inherit;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  z-index: -1000; }
 
-/* line 40, ../sass/index.scss */
+/* line 56, ../sass/index.scss */
 .bg-1-triangle {
-  -moz-transform: translateZ(-0.5px) scale(1.5);
-  -ms-transform: translateZ(-0.5px) scale(1.5);
-  -webkit-transform: translateZ(-0.5px) scale(1.5);
-  transform: translateZ(-0.5px) scale(1.5);
-  z-index: -500;
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  height: 100%;
-  background-image: url("../imgs/bg-1-triangle.png");
-  background-repeat: no-repeat; }
+  height: inherit;
+  z-index: -1000; }
 
-/* line 50, ../sass/index.scss */
+/* line 64, ../sass/index.scss */
 .bg-2-hero {
   -moz-transform: translateZ(0.2px) scale(0.8);
   -ms-transform: translateZ(0.2px) scale(0.8);
@@ -63,13 +65,13 @@ body {
   background-repeat: no-repeat;
   z-index: -100; }
 
-/* line 61, ../sass/index.scss */
+/* line 75, ../sass/index.scss */
 .bg-2-page {
-  -moz-transform: translateZ(-0.8px) scale(1.8);
-  -ms-transform: translateZ(-0.8px) scale(1.8);
-  -webkit-transform: translateZ(-0.8px) scale(1.8);
-  transform: translateZ(-0.8px) scale(1.8);
-  z-index: -800;
+  -moz-transform: translateZ(-0.5px) scale(1.5);
+  -ms-transform: translateZ(-0.5px) scale(1.5);
+  -webkit-transform: translateZ(-0.5px) scale(1.5);
+  transform: translateZ(-0.5px) scale(1.5);
+  z-index: -500;
   position: absolute;
   left: 0;
   top: 1000px;
@@ -78,13 +80,22 @@ body {
   background-image: url("../imgs/bg-2-page.png");
   background-repeat: no-repeat; }
 
-/* line 71, ../sass/index.scss */
+/* line 85, ../sass/index.scss */
 .container {
   width: 1000px;
+  padding-top: 10px;
   margin-left: auto;
   margin-right: auto; }
 
-/* line 76, ../sass/index.scss */
+/* line 91, ../sass/index.scss */
+.title {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 140px;
+  height: 34px; }
+
+/* line 98, ../sass/index.scss */
 .navbar {
   position: fixed;
   top: 0;
@@ -93,47 +104,53 @@ body {
   height: 70px;
   background-color: #fff;
   overflow-y: scroll; }
-  /* line 84, ../sass/index.scss */
+  /* line 106, ../sass/index.scss */
   .navbar .logo {
     float: left;
     width: 96px;
     height: 45px;
     margin-top: 13px;
-    background-image: url("../imgs/ucanlogo.png"); }
-  /* line 91, ../sass/index.scss */
+    background-position: 0 -940px; }
+  /* line 113, ../sass/index.scss */
   .navbar .nav-items {
     float: right;
-    color: #555; }
-    /* line 94, ../sass/index.scss */
+    color: #555;
+    font-size: 0; }
+    /* line 117, ../sass/index.scss */
     .navbar .nav-items .nav-item {
       list-style: none;
       display: inline-block; }
-      /* line 97, ../sass/index.scss */
+      /* line 120, ../sass/index.scss */
+      .navbar .nav-items .nav-item:hover, .navbar .nav-items .nav-item:focus, .navbar .nav-items .nav-item.active {
+        color: #0b2998;
+        font-weight: bold; }
+      /* line 124, ../sass/index.scss */
       .navbar .nav-items .nav-item a {
         display: inline-block;
         text-align: center;
+        font-size: 14px;
+        font-weight: inherit;
         width: 70px;
         height: 70px;
         line-height: 70px;
         margin-left: 15px;
         color: inherit; }
 
-/* line 109, ../sass/index.scss */
+/* line 138, ../sass/index.scss */
 #hero {
-  -moz-transform: translateZ(-0.05px) scale(1.05);
-  -ms-transform: translateZ(-0.05px) scale(1.05);
-  -webkit-transform: translateZ(-0.05px) scale(1.05);
-  transform: translateZ(-0.05px) scale(1.05);
-  z-index: -50;
   display: block;
   width: 100%;
   height: 440px;
   margin-top: 70px;
-  z-index: 1000; }
-  /* line 116, ../sass/index.scss */
+  margin-bottom: 150px;
+  z-index: 1000;
+  -moz-transform-style: flat;
+  -webkit-transform-style: flat;
+  transform-style: flat; }
+  /* line 146, ../sass/index.scss */
   #hero .container {
     position: relative; }
-  /* line 119, ../sass/index.scss */
+  /* line 149, ../sass/index.scss */
   #hero .hero-logo {
     display: block;
     width: 498px;
@@ -141,8 +158,11 @@ body {
     position: absolute;
     top: 158px;
     left: 188px;
-    background-image: url("../imgs/hero-logo.png"); }
-  /* line 128, ../sass/index.scss */
+    background-position: 0 -396px;
+    -moz-transform-style: flat;
+    -webkit-transform-style: flat;
+    transform-style: flat; }
+  /* line 159, ../sass/index.scss */
   #hero .sign-up-btn {
     display: block;
     width: 117px;
@@ -150,9 +170,34 @@ body {
     position: absolute;
     top: 255px;
     right: 150px;
-    background-image: url("../imgs/signup.png");
-    background-repeat: no-repeat;
-    background-size: 117px 117px; }
-    /* line 138, ../sass/index.scss */
+    cursor: pointer;
+    background-position: 0 -780px; }
+    /* line 59, ../../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
+    #hero .sign-up-btn:hover, #hero .sign-up-btn.signup-hover {
+      background-position: 0 -658px; }
+    /* line 168, ../sass/index.scss */
     #hero .sign-up-btn:hover, #hero .sign-up-btn:focus {
-      background-image: url("../imgs/signup-hover.png"); }
+      background-position: 0 -658px; }
+
+/* line 173, ../sass/index.scss */
+section {
+  padding-top: 88px; }
+
+/* line 176, ../sass/index.scss */
+#agenda {
+  height: 1140px; }
+  /* line 178, ../sass/index.scss */
+  #agenda .title {
+    background-position: 0 0; }
+
+/* line 185, ../sass/index.scss */
+#special-guest .title {
+  background-position: 0 -902px; }
+
+/* line 191, ../sass/index.scss */
+#guest .title {
+  background-position: 0 -358px; }
+
+/* line 197, ../sass/index.scss */
+#partner .title {
+  background-position: 0 -619px; }

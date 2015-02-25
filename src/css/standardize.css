@@ -478,10 +478,6 @@ select {
   border: none;
   border-radius: 0;
 }
-img {
-  width: 100%;
-  height: auto;
-}
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
