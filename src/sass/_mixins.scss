@@ -1,7 +1,7 @@
 // Magic parallax mixins
 
 $parallax-perspective : 1 !default;
-$parallax-element     : "#parallax" !default;
+$parallax-element     : "#page" !default;
 $parallax-ios         : true !default;
 
 @mixin parallax-init(

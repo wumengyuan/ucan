@@ -7,23 +7,12 @@
   <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-
-  <div id="parallax">
-    <div class="bg-2-hero">
-    </div>
-    <div class="bg-2-page">
-    </div>
-    <div class="bg-1-triangle">
-    </div>
-  </div>
-
-
   <header class="navbar">
     <div class="container">
       <span class="logo"></span>
       <ul class="nav-items" id="nav">
         <li class="nav-item">
-          <a href="#">首页</a>
+          <a href="#hero">首页</a>
         </li>
         <li class="nav-item">
           <a href="#intro">活动介绍</a>
@@ -41,35 +30,177 @@
     </div>
   </header>
 
-  <section id="hero">
-    <div class="container">
-      <div class="hero-logo"></div>
-      <a class="sign-up-btn" href="#"></a>
-    </div>
-  </section>
-  <section id="intro">
 
-  </section>
-  <section id="agenda">
-    <div class="container">
-      <div class="title agenda-title"></div>
+
+  <div id="page">
+    <section id="hero">
+      <div class="container">
+        <div class="hero-logo"></div>
+        <a class="sign-up-btn" href="#"></a>
+      </div>
+    </section>
+    <section id="agenda">
+      <div class="container">
+        <div class="title agenda-title"></div>
+        <ul class="date-wrap tabs">
+          <li class="active"><a class="day day1" href="#day1-tl"></a></li>
+          <li class=""><a class="day day2" href="#day2-tl"></a></li>
+        </ul>
+        <div class="timeline-wrap">
+          <div class="timeline day1-tl" id="day2-tl">
+            <div class="line"></div>
+            <div class="tl-circle">上午</div>
+            <div class="tl-mod">
+              <div class="time">9:00-10:00</div>
+              <div class="tl-dot"></div>
+              <div class="content">
+                <span class="topic">客户服务宣导</span>
+                <span class="author">蒋方</span>
+              </div>
+            </div>
+            <div class="tl-mod">
+              <div class="time">9:00-10:00</div>
+              <div class="tl-dot"></div>
+              <div class="content">
+                <span class="topic">客户服务宣导</span>
+                <span class="author">蒋方</span>
+              </div>
+            </div>
+            <div class="tl-mod">
+              <div class="time">9:00-10:00</div>
+              <div class="tl-dot"></div>
+              <div class="content">
+                <span class="topic">客户服务宣导</span>
+                <span class="author">蒋方</span>
+              </div>
+            </div>
+            <div class="tl-mod">
+              <div class="time">9:00-10:00</div>
+              <div class="tl-dot"></div>
+              <div class="content">
+                <span class="topic">客户服务宣导</span>
+                <span class="author">蒋方</span>
+              </div>
+            </div>
+            <div class="tl-mod">
+              <div class="time">9:00-10:00</div>
+              <div class="tl-dot"></div>
+              <div class="content border">
+                <span class="topic">现场互动（抽奖）</span>
+              </div>
+            </div>
+            <div class="tl-circle">下午</div>
+            <div class="tl-mod">
+              <div class="time">9:00-10:00</div>
+              <div class="tl-dot"></div>
+              <div class="content">
+                <span class="topic">客户服务宣导</span>
+                <span class="author">蒋方</span>
+              </div>
+            </div>
+            <div class="tl-mod">
+              <div class="time">9:00-10:00</div>
+              <div class="tl-dot"></div>
+              <div class="content border">
+                <span class="topic">现场互动（抽奖）</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline day2-tl" id="day1-tl">
+            <div class="line"></div>
+            <div class="tl-circle">上午</div>
+            <div class="tl-mod">
+              <div class="time">9:00-10:00</div>
+              <div class="tl-dot"></div>
+              <div class="content">
+                <span class="topic">客户服务宣导</span>
+                <span class="author">蒋方</span>
+              </div>
+            </div>
+            <div class="tl-mod">
+              <div class="time">9:00-10:00</div>
+              <div class="tl-dot"></div>
+              <div class="content">
+                <span class="topic">客户服务宣导</span>
+                <span class="author">蒋方</span>
+              </div>
+            </div>
+            <div class="tl-mod">
+              <div class="time">9:00-10:00</div>
+              <div class="tl-dot"></div>
+              <div class="content">
+                <span class="topic">客户服务宣导</span>
+                <span class="author">蒋方</span>
+              </div>
+            </div>
+            <div class="tl-mod">
+              <div class="time">9:00-10:00</div>
+              <div class="tl-dot"></div>
+              <div class="content">
+                <span class="topic">客户服务宣导</span>
+                <span class="author">蒋方</span>
+              </div>
+            </div>
+            <div class="tl-mod">
+              <div class="time">9:00-10:00</div>
+              <div class="tl-dot"></div>
+              <div class="content border">
+                <span class="topic">现场互动（抽奖）</span>
+              </div>
+            </div>
+            <div class="tl-circle">下午</div>
+            <div class="tl-mod-lg">
+              <div class="time">13:00 - 16:00</div>
+              <div class="tl-dot"></div>
+              <div class="tab-block">
+                <ul class="tabs">
+                  <li><a href="#design">视觉<small>分会场</small></a></li>
+                  <li><a href="#interaction">交互<small>分会场</small></a></li>
+                  <li><a href="#user-research">用研<small>分会场</small></a></li>
+                </ul>
+                <div class="content" id="design">
+                  design
+                </div>
+                <div class="content" id="interaction">
+                  interaction
+                </div>
+                <div class="content" id="user-research">
+                  user-research
+                </div>
+              </div>
+            </div>
+            <div class="tl-dot"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="special-guest">
+      <div class="container">
+        <div class="title special-guest-title"></div>
+      </div>
+    </section>
+    <section id="guest">
+      <div class="container">
+        <div class="title guest-title"></div>
+      </div>
+    </section>
+    <section id="partner">
+      <div class="container">
+        <div class="title partner-title"></div>
+      </div>
+    </section>
+    <div class="bg-2-hero">
     </div>
-  </section>
-  <section id="special-guest">
-    <div class="container">
-      <div class="title special-guest-title"></div>
+    <div class="bg-2-page">
     </div>
-  </section>
-  <section id="guest">
-    <div class="container">
-      <div class="title guest-title"></div>
+    <div class="bg-1-triangle">
     </div>
-  </section>
-  <section id="partner">
-    <div class="container">
-      <div class="title partner-title"></div>
-    </div>
-  </section>
+  </div>
+  <!-- <section id="intro">
+
+  </section> -->
+
 
   <script src="js/jquery-min.js"></script>
   <script src="js/singlenav.js"></script>

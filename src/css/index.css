@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* line 136, ucan/*.png */
-.ucan-sprite, .navbar .logo, #hero .hero-logo, #hero .sign-up-btn, #hero .sign-up-btn:hover, #hero .sign-up-btn:focus, #agenda .title, #special-guest .title, #guest .title, #partner .title {
+.ucan-sprite, .navbar .logo, #hero .hero-logo, #hero .sign-up-btn, #hero .sign-up-btn:hover, #hero .sign-up-btn:focus, #agenda .title.agenda-title, #agenda .date-wrap .day1, #agenda .date-wrap .day1.active, #agenda .date-wrap .day2, #agenda .date-wrap .day2.active, #special-guest .title.special-guest-title, #guest .title.guest-title, #partner .title.partner-title {
   background-image: url('../imgs/ucan-s88e717db13.png');
   background-repeat: no-repeat; }
 
@@ -8,7 +8,7 @@
  * varibles
  */
 /* line 21, ../sass/_mixins.scss */
-#parallax {
+#page {
   overflow: auto;
   -moz-perspective: 1px;
   -webkit-perspective: 1px;
@@ -17,12 +17,12 @@
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d; }
   /* line 30, ../sass/_mixins.scss */
-  #parallax, #parallax * {
+  #page, #page * {
     -moz-transform-style: preserve-3d;
     -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d; }
 
-/* line 39, ../sass/index.scss */
+/* line 41, ../sass/index.scss */
 body {
   height: 3878px;
   background-position: -120px 0;
@@ -30,15 +30,13 @@ body {
   overflow-x: hidden;
   font-family: Arial, "Hiragino Sans GB", "Microsoft Yahei", "微软雅黑", sans-serif; }
 
-/* line 47, ../sass/index.scss */
-#parallax {
+/* line 49, ../sass/index.scss */
+#page {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: inherit;
-  overflow-x: hidden;
-  z-index: -1000; }
+  overflow-x: hidden; }
 
 /* line 56, ../sass/index.scss */
 .bg-1-triangle {
@@ -46,10 +44,12 @@ body {
   left: 0;
   top: 0;
   width: 100%;
+  background-image: url("../imgs/bg-1-triangle.png");
+  background-repeat: no-repeat;
   height: inherit;
   z-index: -1000; }
 
-/* line 64, ../sass/index.scss */
+/* line 66, ../sass/index.scss */
 .bg-2-hero {
   -moz-transform: translateZ(0.2px) scale(0.8);
   -ms-transform: translateZ(0.2px) scale(0.8);
@@ -58,36 +58,33 @@ body {
   z-index: 200;
   position: absolute;
   left: 0;
-  top: 300px;
+  top: 120px;
   width: 100%;
   height: 857px;
   background-image: url("../imgs/bg-2-hero.png");
   background-repeat: no-repeat;
-  z-index: -100; }
+  z-index: -900; }
 
-/* line 75, ../sass/index.scss */
+/* line 77, ../sass/index.scss */
 .bg-2-page {
-  -moz-transform: translateZ(-0.5px) scale(1.5);
-  -ms-transform: translateZ(-0.5px) scale(1.5);
-  -webkit-transform: translateZ(-0.5px) scale(1.5);
-  transform: translateZ(-0.5px) scale(1.5);
-  z-index: -500;
   position: absolute;
   left: 0;
   top: 1000px;
   width: 100%;
   height: 2424px;
   background-image: url("../imgs/bg-2-page.png");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  z-index: -900; }
 
-/* line 85, ../sass/index.scss */
+/* line 87, ../sass/index.scss */
 .container {
   width: 1000px;
   padding-top: 10px;
   margin-left: auto;
-  margin-right: auto; }
+  margin-right: auto;
+  position: relative; }
 
-/* line 91, ../sass/index.scss */
+/* line 94, ../sass/index.scss */
 .title {
   display: block;
   margin-left: auto;
@@ -95,7 +92,7 @@ body {
   width: 140px;
   height: 34px; }
 
-/* line 98, ../sass/index.scss */
+/* line 101, ../sass/index.scss */
 .navbar {
   position: fixed;
   top: 0;
@@ -104,31 +101,31 @@ body {
   height: 70px;
   background-color: #fff;
   overflow-y: scroll; }
-  /* line 106, ../sass/index.scss */
+  /* line 109, ../sass/index.scss */
   .navbar .logo {
     float: left;
     width: 96px;
     height: 45px;
     margin-top: 13px;
     background-position: 0 -940px; }
-  /* line 113, ../sass/index.scss */
+  /* line 116, ../sass/index.scss */
   .navbar .nav-items {
     float: right;
     color: #555;
     font-size: 0; }
-    /* line 117, ../sass/index.scss */
+    /* line 120, ../sass/index.scss */
     .navbar .nav-items .nav-item {
       list-style: none;
       display: inline-block; }
-      /* line 120, ../sass/index.scss */
+      /* line 123, ../sass/index.scss */
       .navbar .nav-items .nav-item:hover, .navbar .nav-items .nav-item:focus, .navbar .nav-items .nav-item.active {
         color: #0b2998;
         font-weight: bold; }
-      /* line 124, ../sass/index.scss */
+      /* line 127, ../sass/index.scss */
       .navbar .nav-items .nav-item a {
         display: inline-block;
         text-align: center;
-        font-size: 14px;
+        font-size: 16px;
         font-weight: inherit;
         width: 70px;
         height: 70px;
@@ -136,21 +133,20 @@ body {
         margin-left: 15px;
         color: inherit; }
 
-/* line 138, ../sass/index.scss */
+/* line 141, ../sass/index.scss */
 #hero {
   display: block;
   width: 100%;
   height: 440px;
-  margin-top: 70px;
   margin-bottom: 150px;
   z-index: 1000;
   -moz-transform-style: flat;
   -webkit-transform-style: flat;
   transform-style: flat; }
-  /* line 146, ../sass/index.scss */
+  /* line 148, ../sass/index.scss */
   #hero .container {
     position: relative; }
-  /* line 149, ../sass/index.scss */
+  /* line 151, ../sass/index.scss */
   #hero .hero-logo {
     display: block;
     width: 498px;
@@ -162,7 +158,7 @@ body {
     -moz-transform-style: flat;
     -webkit-transform-style: flat;
     transform-style: flat; }
-  /* line 159, ../sass/index.scss */
+  /* line 161, ../sass/index.scss */
   #hero .sign-up-btn {
     display: block;
     width: 117px;
@@ -175,29 +171,207 @@ body {
     /* line 59, ../../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
     #hero .sign-up-btn:hover, #hero .sign-up-btn.signup-hover {
       background-position: 0 -658px; }
-    /* line 168, ../sass/index.scss */
+    /* line 170, ../sass/index.scss */
     #hero .sign-up-btn:hover, #hero .sign-up-btn:focus {
       background-position: 0 -658px; }
 
-/* line 173, ../sass/index.scss */
+/* line 175, ../sass/index.scss */
 section {
-  padding-top: 88px; }
+  padding-top: 80px; }
 
-/* line 176, ../sass/index.scss */
+/* line 178, ../sass/index.scss */
 #agenda {
   height: 1140px; }
-  /* line 178, ../sass/index.scss */
-  #agenda .title {
+  /* line 181, ../sass/index.scss */
+  #agenda .title.agenda-title {
     background-position: 0 0; }
+  /* line 184, ../sass/index.scss */
+  #agenda .date-wrap {
+    display: block;
+    width: 406px;
+    font-size: 0;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    list-style: none; }
+    /* line 193, ../sass/index.scss */
+    #agenda .date-wrap li {
+      display: inline-block; }
+      /* line 195, ../sass/index.scss */
+      #agenda .date-wrap li a {
+        -moz-appearance: none;
+        -webkit-appearance: none; }
+    /* line 199, ../sass/index.scss */
+    #agenda .date-wrap .day {
+      display: inline-block;
+      width: 198px;
+      height: 75px; }
+    /* line 204, ../sass/index.scss */
+    #agenda .date-wrap .day1 {
+      margin-right: 10px;
+      background-position: 0 -118px; }
+      /* line 207, ../sass/index.scss */
+      #agenda .date-wrap .day1.active {
+        background-position: 0 -38px; }
+    /* line 211, ../sass/index.scss */
+    #agenda .date-wrap .day2 {
+      background-position: 0 -278px; }
+      /* line 213, ../sass/index.scss */
+      #agenda .date-wrap .day2.active {
+        background-position: 0 -198px; }
+  /* line 219, ../sass/index.scss */
+  #agenda .timeline-wrap .line {
+    display: block;
+    position: absolute;
+    left: 310px;
+    width: 0;
+    height: 100%;
+    height: calc(100% - 25px);
+    border-left: 1px solid #0b2998; }
+  /* line 228, ../sass/index.scss */
+  #agenda .timeline-wrap .tl-circle {
+    display: block;
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+    margin-left: 285px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    background-color: #0b2998;
+    border-radius: 50%; }
+  /* line 242, ../sass/index.scss */
+  #agenda .timeline-wrap .tl-dot {
+    position: absolute;
+    bottom: 25px;
+    left: 305px;
+    height: 10px;
+    width: 10px;
+    background-color: #0b2998;
+    border-radius: 50%; }
+  /* line 251, ../sass/index.scss */
+  #agenda .timeline-wrap .tl-mod {
+    display: block;
+    height: 52px;
+    line-height: 52px;
+    font-size: 0;
+    margin-left: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    /* line 259, ../sass/index.scss */
+    #agenda .timeline-wrap .tl-mod .time {
+      display: inline-block;
+      width: 100px;
+      text-align: right;
+      color: #0b2998;
+      font-size: 16px; }
+    /* line 266, ../sass/index.scss */
+    #agenda .timeline-wrap .tl-mod .tl-dot {
+      top: 20px;
+      left: 105px; }
+    /* line 270, ../sass/index.scss */
+    #agenda .timeline-wrap .tl-mod .content {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 28px;
+      width: 455px;
+      height: inherit;
+      background-color: #eee; }
+      /* line 277, ../sass/index.scss */
+      #agenda .timeline-wrap .tl-mod .content .topic {
+        float: left;
+        margin-left: 20px;
+        font-size: 18px;
+        color: #555; }
+      /* line 283, ../sass/index.scss */
+      #agenda .timeline-wrap .tl-mod .content .author {
+        float: right;
+        margin-right: 20px;
+        font-size: 12px;
+        color: #909090; }
+      /* line 289, ../sass/index.scss */
+      #agenda .timeline-wrap .tl-mod .content:hover, #agenda .timeline-wrap .tl-mod .content:focus {
+        background-color: #f6f6f6; }
+      /* line 293, ../sass/index.scss */
+      #agenda .timeline-wrap .tl-mod .content.border {
+        background-color: #fff;
+        border: 1px solid #ddd; }
+        /* line 296, ../sass/index.scss */
+        #agenda .timeline-wrap .tl-mod .content.border .topic {
+          font-size: 14px; }
+  /* line 302, ../sass/index.scss */
+  #agenda .timeline-wrap .tl-mod-lg {
+    display: block;
+    font-size: 0;
+    margin-left: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    /* line 308, ../sass/index.scss */
+    #agenda .timeline-wrap .tl-mod-lg .time {
+      display: inline-block;
+      width: 100px;
+      height: 52px;
+      line-height: 52px;
+      text-align: right;
+      color: #0b2998;
+      font-size: 16px; }
+    /* line 317, ../sass/index.scss */
+    #agenda .timeline-wrap .tl-mod-lg .tl-dot {
+      top: 20px;
+      left: 105px; }
+    /* line 321, ../sass/index.scss */
+    #agenda .timeline-wrap .tl-mod-lg .tab-block {
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 28px;
+      width: 464px;
+      height: 360px;
+      font-size: 16px; }
+      /* line 328, ../sass/index.scss */
+      #agenda .timeline-wrap .tl-mod-lg .tab-block .tabs {
+        list-style: none;
+        font-size: 0; }
+        /* line 331, ../sass/index.scss */
+        #agenda .timeline-wrap .tl-mod-lg .tab-block .tabs li {
+          display: inline-block;
+          margin-right: 1px; }
+          /* line 334, ../sass/index.scss */
+          #agenda .timeline-wrap .tl-mod-lg .tab-block .tabs li:last-child {
+            margin-right: 0; }
+          /* line 337, ../sass/index.scss */
+          #agenda .timeline-wrap .tl-mod-lg .tab-block .tabs li a {
+            display: inline-block;
+            width: 154px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 16px;
+            color: #555;
+            background-color: #eee; }
+            /* line 346, ../sass/index.scss */
+            #agenda .timeline-wrap .tl-mod-lg .tab-block .tabs li a small {
+              font-size: 12px; }
+            /* line 349, ../sass/index.scss */
+            #agenda .timeline-wrap .tl-mod-lg .tab-block .tabs li a.active {
+              color: #fff;
+              background-color: #0b2998; }
+      /* line 356, ../sass/index.scss */
+      #agenda .timeline-wrap .tl-mod-lg .tab-block .content {
+        width: 464px;
+        height: 310px;
+        border: 1px solid #0b2998; }
 
-/* line 185, ../sass/index.scss */
-#special-guest .title {
+/* line 368, ../sass/index.scss */
+#special-guest .title.special-guest-title {
   background-position: 0 -902px; }
 
-/* line 191, ../sass/index.scss */
-#guest .title {
+/* line 374, ../sass/index.scss */
+#guest .title.guest-title {
   background-position: 0 -358px; }
 
-/* line 197, ../sass/index.scss */
-#partner .title {
+/* line 380, ../sass/index.scss */
+#partner .title.partner-title {
   background-position: 0 -619px; }
