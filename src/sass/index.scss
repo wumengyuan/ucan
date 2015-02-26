@@ -20,6 +20,7 @@ $gray:#909090; // author/second part
 // bg
 $gray-bg:#eee;
 $light-gray-bg:#f6f6f6;//schedule hover bg
+$white-bg:#fdfdfd;
 $yellow-bg:#fed939;
 
 $border-color:#ddd;
@@ -267,7 +268,7 @@ section {
                 top:20px;
                 left: 105px;
             }
-            .content {
+            .topic-mod {
                 display: inline-block;
                 vertical-align: top;
                 margin-left: 28px;
@@ -290,11 +291,14 @@ section {
                     background-color: $light-gray-bg;
                 }
 
-                &.border {
-                    background-color: #fff;
+                &.light {
+                    background-color: $white-bg;
                     border:1px solid $border-color;
                     .topic {
                         font-size: $font-md;
+                    }
+                    &:hover, &:focus {
+                        // background-color: $light-gray-bg;
                     }
                 }
             }
@@ -353,15 +357,39 @@ section {
                         }
                     }
                 }
-                .content {
+                .tab-content {
                     width: 464px;
-                    height: 310px;
                     border:1px solid $purple;
+                    .topic-mod {
+                        display: block;
+                        height: 43px;
+                        line-height: 43px;
+                        width: 100%;
+                        border-bottom: 1px solid $border-color;
+                        background-color: $white-bg;
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                        &:hover, &:focus {
+                            background-color: $light-gray-bg;
+                        }
+                        .topic {
+                            float: left;
+                            margin-left: 20px;
+                            font-size: $font-xlg;
+                            color:$dark-gray;
+                        }
+                        .author {
+                            float: right;
+                            margin-right: 20px;
+                            font-size: $font-sm;
+                            color:$gray;
+                        }
+                    }
                 }
             }
         }
     }
-    // background-color: red;
 }
 
 #special-guest {

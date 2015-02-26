@@ -4,7 +4,7 @@ module.exports = function (grunt) {
         cssDir = 'css/',
         imgDir = 'imgs/',
         libDir = 'libs/',
-        pageDir = 'pages/',
+        pageDir = '',
         buildDir = 'build/';
 
 
