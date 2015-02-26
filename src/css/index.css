@@ -308,8 +308,10 @@ section {
     font-size: 0;
     margin-left: 200px;
     margin-top: 10px;
-    margin-bottom: 10px; }
-    /* line 312, ../sass/index.scss */
+    margin-bottom: 10px;
+    position: relative;
+    transform-style: flat; }
+    /* line 314, ../sass/index.scss */
     #agenda .timeline-wrap .tl-mod-lg .time {
       display: inline-block;
       width: 100px;
@@ -318,11 +320,11 @@ section {
       text-align: right;
       color: #0b2998;
       font-size: 16px; }
-    /* line 321, ../sass/index.scss */
+    /* line 323, ../sass/index.scss */
     #agenda .timeline-wrap .tl-mod-lg .tl-dot {
       top: 20px;
       left: 105px; }
-    /* line 325, ../sass/index.scss */
+    /* line 327, ../sass/index.scss */
     #agenda .timeline-wrap .tl-mod-lg .tab-block {
       display: inline-block;
       vertical-align: top;
@@ -330,18 +332,18 @@ section {
       width: 464px;
       height: 360px;
       font-size: 16px; }
-      /* line 332, ../sass/index.scss */
+      /* line 334, ../sass/index.scss */
       #agenda .timeline-wrap .tl-mod-lg .tab-block .tabs {
         list-style: none;
         font-size: 0; }
-        /* line 335, ../sass/index.scss */
+        /* line 337, ../sass/index.scss */
         #agenda .timeline-wrap .tl-mod-lg .tab-block .tabs li {
           display: inline-block;
           margin-right: 1px; }
-          /* line 338, ../sass/index.scss */
+          /* line 340, ../sass/index.scss */
           #agenda .timeline-wrap .tl-mod-lg .tab-block .tabs li:last-child {
             margin-right: 0; }
-          /* line 341, ../sass/index.scss */
+          /* line 343, ../sass/index.scss */
           #agenda .timeline-wrap .tl-mod-lg .tab-block .tabs li a {
             display: inline-block;
             width: 154px;
@@ -351,18 +353,18 @@ section {
             font-size: 16px;
             color: #555;
             background-color: #eee; }
-            /* line 350, ../sass/index.scss */
+            /* line 352, ../sass/index.scss */
             #agenda .timeline-wrap .tl-mod-lg .tab-block .tabs li a small {
               font-size: 12px; }
-            /* line 353, ../sass/index.scss */
+            /* line 355, ../sass/index.scss */
             #agenda .timeline-wrap .tl-mod-lg .tab-block .tabs li a.active {
               color: #fff;
               background-color: #0b2998; }
-      /* line 360, ../sass/index.scss */
+      /* line 362, ../sass/index.scss */
       #agenda .timeline-wrap .tl-mod-lg .tab-block .tab-content {
         width: 464px;
         border: 1px solid #0b2998; }
-        /* line 363, ../sass/index.scss */
+        /* line 365, ../sass/index.scss */
         #agenda .timeline-wrap .tl-mod-lg .tab-block .tab-content .topic-mod {
           display: block;
           height: 43px;
@@ -370,33 +372,33 @@ section {
           width: 100%;
           border-bottom: 1px solid #ddd;
           background-color: #fdfdfd; }
-          /* line 370, ../sass/index.scss */
+          /* line 372, ../sass/index.scss */
           #agenda .timeline-wrap .tl-mod-lg .tab-block .tab-content .topic-mod:last-child {
             border-bottom: none; }
-          /* line 373, ../sass/index.scss */
+          /* line 375, ../sass/index.scss */
           #agenda .timeline-wrap .tl-mod-lg .tab-block .tab-content .topic-mod:hover, #agenda .timeline-wrap .tl-mod-lg .tab-block .tab-content .topic-mod:focus {
             background-color: #f6f6f6; }
-          /* line 376, ../sass/index.scss */
+          /* line 378, ../sass/index.scss */
           #agenda .timeline-wrap .tl-mod-lg .tab-block .tab-content .topic-mod .topic {
             float: left;
             margin-left: 20px;
             font-size: 18px;
             color: #555; }
-          /* line 382, ../sass/index.scss */
+          /* line 384, ../sass/index.scss */
           #agenda .timeline-wrap .tl-mod-lg .tab-block .tab-content .topic-mod .author {
             float: right;
             margin-right: 20px;
             font-size: 12px;
             color: #909090; }
 
-/* line 396, ../sass/index.scss */
+/* line 398, ../sass/index.scss */
 #special-guest .title.special-guest-title {
   background-position: 0 -902px; }
 
-/* line 402, ../sass/index.scss */
+/* line 404, ../sass/index.scss */
 #guest .title.guest-title {
   background-position: 0 -358px; }
 
-/* line 408, ../sass/index.scss */
+/* line 410, ../sass/index.scss */
 #partner .title.partner-title {
   background-position: 0 -619px; }
