@@ -13,7 +13,7 @@ $ucan-spacing: 5px;
 
 // fonts color
 $purple:#0b2998; // main color
-$yellow:#fea411;
+$yellow:#fed939;
 $blue:#25bff8;
 $dark-gray:#555; // title
 $gray:#909090; // author/second part
@@ -21,7 +21,6 @@ $gray:#909090; // author/second part
 $gray-bg:#eee;
 $light-gray-bg:#f6f6f6;//schedule hover bg
 $white-bg:#fdfdfd;
-$yellow-bg:#fed939;
 
 $border-color:#ddd;
 
@@ -51,50 +50,67 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-.bg-tri-1 {
-    // @include parallax(.2);
+.bg-tri {
     position: absolute;
-    top:0;
     left:50%;
-    margin-left: -400px;
-    width: 1077px;
-    height: 680px;
-    background-image: url("../imgs/bg-tri-1.png");
     overflow:hidden;
     z-index: -900;
+}
+.bg-tri-1 {
+    @extend .bg-tri;
+    top:0;
+    margin-left: -538.5px;
+}
+.bg-tri-2 {
+    @extend .bg-tri;
+    top:800px;
+    margin-left: -497px;
+}
+.bg-tri-3 {
+    @extend .bg-tri;
+    top:1800px;
+    margin-left: -550.5px;
 }
 .bg-2-hero {
     position: absolute;
     left:0;
     top:0;
-    // background-image: url('../imgs/bg-2-hero.png');
-    // background-repeat: no-repeat;
     z-index: -800;
+    max-width:1811px;
+}
+@media (min-width: 1811px) {
+    .bg-2-hero {
+        left:50%;
+        margin-left: -905.5px;
+    }
 }
 .bg-2-page {
     position: absolute;
     left:0;
-    top:800px;
-    width: 100%;
-    height: 2424px;
-    background-image: url('../imgs/bg-2-page.png');
-    background-repeat: no-repeat;
-    z-index: -900;
+    top:1000px;
+    z-index: -800;
+    max-width:1753px;
+}
+@media (min-width: 1753px) {
+    .bg-2-page {
+        left:50%;
+        margin-left: -876.5px;
+    }
 }
 .container {
     width: 1000px;
-    padding-top: 10px;
     margin-left: auto;
     margin-right: auto;
     position: relative;
+    .title {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 140px;
+        height: 34px;
+    }
 }
-.title {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 140px;
-    height: 34px;
-}
+
 .navbar {
     position: fixed;
     top:0;
@@ -178,7 +194,7 @@ section {
         display: block;
         text-align: left;
         width: 667px;
-        margin: 200px auto 200px;
+        margin: 200px auto 20px;
         color:$purple;
         line-height: 1.5em;
         font-size: $font-lg;
@@ -412,7 +428,7 @@ section {
 
 #special-guest {
     height: 644px;
-    background-color: $yellow-bg;
+    background-color: $yellow;
     color:$purple;
     z-index: -1000;
     .title.special-guest-title {
@@ -528,7 +544,7 @@ section {
         width: 120px;
         height: 50px;
         margin-right: 17px;
-        background-color: $yellow-bg;
+        background-color: $yellow;
         @include filter(grayscale(1));
         &:hover {
             @include filter(grayscale(0));
@@ -537,4 +553,92 @@ section {
             margin-right: 0;
         }
     }
+}
+
+/**
+ * Modal
+ */
+.modal-dialog {
+    display: none;
+    // display: block;
+    position: fixed;
+    left: 50%;
+    top:10%;
+    margin-left: -349px;
+    // margin-top: -321px;
+    text-align: left;
+    width: 698px;
+    background: #FFF;
+    color:$dark-gray;
+    border:6px solid $purple;
+    .jqmClose {
+        color:#fff;
+        position: absolute;
+        right:20px;
+        top:20px;
+        font-size: 32px;
+        z-index: 10;
+    }
+    .modal-header {
+        height: 111px;
+        background-color: $yellow;
+        position: relative;
+        padding-left: 160px;
+        .photo {
+            position: absolute;
+            border-radius:50%;
+            top:20px;
+            left:40px;
+            background-color: $light-gray-bg;
+        }
+        .name {
+            padding-top: 45px;
+            margin-bottom: 10px;
+            font-size: $font-xlg;
+        }
+        .title {
+            font-size: $font-md;
+        }
+    }
+    .modal-body {
+        padding: 40px;
+        .intro-wrap {
+            margin-bottom: 25px;
+            p {
+                text-indent:2em;
+                line-height: 1.8em;
+                font-size: $font-md;
+            }
+        }
+        .topic-wrap {
+            margin-bottom: 25px;
+            .topic {
+                margin-top: 20px;
+                margin-bottom: 10px;
+                font-size: $font-xlg;
+            }
+            p {
+                line-height: 1.8em;
+                font-size: $font-md;
+            }
+        }
+        .datetime {
+            .iconfont {
+                margin-right: 10px;
+            }
+            margin-top: 10px;
+            font-size: $font-md;
+        }
+        .location {
+            .iconfont {
+                margin-right: 10px;
+            }
+            margin-top: 10px;
+            font-size: $font-md;
+        }
+    }
+}
+
+.jqmOverlay {
+    background-color: #fff;
 }

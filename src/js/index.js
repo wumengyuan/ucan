@@ -41,6 +41,33 @@ $(document).ready(function() {
         });
     });
 
+    // dialog
+    $('div.modal-dialog').each(function(){
+
+        var modal_id = this.id || $(this).data('modal');
+        var trigger = $('a.modal-trigger[data-modal="' + modal_id + '"]');
+
+        $(this).jqm({
+            toTop: true,
+            trigger: trigger
+        });
+
+    });
+
+    $.getJSON( "data.json", function( info ) {
+        var output='';
+        for (var i = 0; i < info.links.length; i++) {
+            for (var key in info.links[i]) {
+                if (info.links[i].hasOwnProperty(key)) {
+                    output += '<li><a href="'+info.links[i].key+'">'+key+'</a></li>';
+                }
+            }
+        }
+
+        var links = document.getElementById('links');
+        links.innerHTML = output;
+    });
+
 
 });
 
