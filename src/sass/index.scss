@@ -14,7 +14,7 @@ $ucan-spacing: 5px;
 // fonts color
 $purple:#0b2998; // main color
 $yellow:#fea411;
-$blue:#25b0fc;
+$blue:#25bff8;
 $dark-gray:#555; // title
 $gray:#909090; // author/second part
 // bg
@@ -40,35 +40,43 @@ $font-sm:12px;
 @include parallax-init;
 
 body {
-    height: 3878px;
-    // background: url('../imgs/UCAN2015.png');
     background-position: -120px 0;
     background-repeat: no-repeat;
-    overflow-x:hidden;
     font-family: $sansFontFamily;
+    margin-bottom: 120px;
+    background-color: $white-bg;
 }
-#page {
+#parallax {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bg-tri-1 {
+    @include parallax(.2);
     position: absolute;
     top:0;
-    left:0;
-    width: 100%;
-    overflow-x:hidden;
+    left:50%;
+    margin-left: -400px;
+    width: 1077px;
+    height: 680px;
+    background-image: url("../imgs/bg-tri-1.png");
+    overflow:hidden;
+    z-index: -900;
 }
 .bg-1-triangle {
     position: absolute;
     left:0;
-    top:0;
+    top:70px;
     width: 100%;
-    background-image: url('../imgs/bg-1-triangle.png');
+    // background-image: url('../imgs/bg-1-triangle.png');
     background-repeat: no-repeat;
     height: inherit;
     z-index: -1000;
 }
 .bg-2-hero {
-    @include parallax(.2);
     position: absolute;
     left:0;
-    top:120px;
+    top:0;
     width: 100%;
     height: 857px;
     background-image: url('../imgs/bg-2-hero.png');
@@ -78,7 +86,7 @@ body {
 .bg-2-page {
     position: absolute;
     left:0;
-    top:1000px;
+    top:800px;
     width: 100%;
     height: 2424px;
     background-image: url('../imgs/bg-2-page.png');
@@ -139,45 +147,67 @@ body {
         }
     }
 }
-#hero {
+section {
+    padding-top: 80px;
+}
+#intro {
     display: block;
-    width: 100%;
-    height: 440px;
-    margin-bottom: 150px;
     z-index: 1000;
-    @include transform-style(flat);
-    .container {
+    .hero-wrap {
+        @include parallax(.6);
+        display: block;
         position: relative;
+        width: 710px;
+        height: 220px;
+        margin-top: 250px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .hero-logo {
         display: block;
+        position: absolute;
+        left:0;
+        bottom:0;
+        margin-left: 40px;
         width: 498px;
         height: 218px;
-        position: absolute;
-        top:158px;
-        left: 188px;
         @include ucan-sprite(hero-logo);
-        @include transform-style(flat);
+        // @include transform-style(flat);
     }
     .sign-up-btn {
         display: block;
         width: 117px;
         height: 117px;
         position: absolute;
-        top:255px;
-        right: 150px;
+        right:0;
+        bottom:0;
         cursor:pointer;
         @include ucan-sprite(signup);
         &:hover,&:focus {
             @include ucan-sprite(signup-hover);
         }
     }
-}
-section {
-    padding-top: 80px;
+    p {
+        display: block;
+        text-align: left;
+        width: 667px;
+        margin-top: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        color:$purple;
+        line-height: 1.5em;
+        font-size: $font-lg;
+        .tri {
+            display: inline-block;
+            width: 22px;
+            height: 26px;
+            vertical-align: bottom;
+            margin-right: 10px;
+            @include ucan-sprite(tri);
+        }
+    }
 }
 #agenda {
-    // margin-top: 650px;
     height: 1140px;
     .title.agenda-title {
         @include ucan-sprite(agenda-title);
@@ -217,6 +247,7 @@ section {
         }
     }
     .timeline-wrap {
+        position: relative;
         .line {
             display: block;
             position: absolute;
@@ -251,6 +282,7 @@ section {
         }
         .tl-mod {
             display: block;
+            position: relative;
             height: 52px;
             line-height: 52px;
             font-size: 0;
@@ -329,7 +361,6 @@ section {
                 vertical-align: top;
                 margin-left: 28px;
                 width: 464px;
-                height: 360px;
                 font-size: $font-lg;
                 .tabs {
                     list-style: none;
@@ -395,19 +426,130 @@ section {
 }
 
 #special-guest {
+    height: 644px;
+    background-color: $yellow-bg;
+    color:$purple;
+    z-index: -1000;
     .title.special-guest-title {
         @include ucan-sprite(special-guest-title);
+    }
+    p.leading {
+        display: block;
+        width: 590px;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 40px;
+        line-height: 1.5em;
+        font-size: $font-lg;
+        text-align: center;
+    }
+    .guest-wrap {
+        width: 945px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 0;
+        .guest {
+            display: inline-block;
+            width: 235px;
+            height: 291px;
+            margin-right: 1px;
+            background-color: $light-gray-bg;
+            position: relative;
+            .mask {
+                position: absolute;
+                display: none;
+                bottom:0;
+                height: 71px;
+                width: 100%;
+                color:#fff;
+                text-align: center;
+                background-color: $blue;
+                background-color: rgba($blue, 0.8);
+                .name {
+                    font-size: $font-xlg;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                }
+                .intro {
+                    font-size: $font-md;
+                }
+            }
+            &:hover, &:focus {
+                .mask {
+                    display: block;
+                }
+            }
+
+        }
     }
 }
 
 #guest {
+    .container {
+
+    }
     .title.guest-title {
         @include ucan-sprite(guest-title);
+    }
+    .guest-wrap {
+        width: 845px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 0;
+        &.narrow {
+            width: 665px;
+        }
+    }
+    .guest-mod {
+        display: inline-block;
+        margin-top: 50px;
+        margin-right: 48px;
+        text-align: center;
+        &:last-child {
+            margin-right: 0;
+        }
+        .avatar {
+            display: block;
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            background-color: $light-gray-bg;
+        }
+        .name {
+            font-size: $font-lg;
+            // font-weight: bold;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        .intro {
+            font-size: $font-sm;
+        }
     }
 }
 
 #partner {
     .title.partner-title {
         @include ucan-sprite(partner-title);
+        margin-bottom: 40px;
+    }
+    .partner-wrap {
+        padding-left: 25px;
+        padding-right: 25px;
+        font-size: 0;
+    }
+    .partner-logo {
+        display: inline-block;
+        width: 120px;
+        height: 50px;
+        margin-right: 17px;
+        background-color: $yellow-bg;
+        @include filter(grayscale(1));
+        &:hover {
+            @include filter(grayscale(0));
+        }
+        &:last-child {
+            margin-right: 0;
+        }
     }
 }
