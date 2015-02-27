@@ -55,10 +55,15 @@ body {
     height: 810px;
     margin-left: auto;
     margin-right: auto;
+    #parallax-scene {
+        tranform-style:flat !important;
+        backface-visibility:visible;
+        .layer {
+            width: 100%;
+        }
+    }
 }
-#parallax-scene .layer {
-    width: 100%;
-}
+
 .bg-tri-1 {
     display: block;
     margin-left: auto;

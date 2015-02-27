@@ -75,7 +75,7 @@ module.exports = function (grunt) {
 
         concat: {
             options: {
-                separator: '\n',
+                separator: ';\n',
             },
             dist: {
                 src: [baseDir + libDir + '*.js'],
@@ -134,7 +134,7 @@ module.exports = function (grunt) {
             },
             concat: {
                 files: [baseDir + libDir + '*.js'],
-                tasks:['concat']
+                tasks:['concat:dist']
             },
             livereload: {
                 // 我们不需要配置额外的任务，watch任务已经内建LiveReload浏览器刷新的代码片段。
