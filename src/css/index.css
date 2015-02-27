@@ -587,18 +587,18 @@ section {
         line-height: 1.8em;
         font-size: 14px; }
     /* line 625, ../sass/index.scss */
-    .modal-dialog .modal-body .datetime {
+    .modal-dialog .modal-body .datetime-wrap {
       margin-top: 10px;
       font-size: 14px; }
       /* line 626, ../sass/index.scss */
-      .modal-dialog .modal-body .datetime .iconfont {
+      .modal-dialog .modal-body .datetime-wrap .iconfont {
         margin-right: 10px; }
     /* line 632, ../sass/index.scss */
-    .modal-dialog .modal-body .location {
+    .modal-dialog .modal-body .location-wrap {
       margin-top: 10px;
       font-size: 14px; }
       /* line 633, ../sass/index.scss */
-      .modal-dialog .modal-body .location .iconfont {
+      .modal-dialog .modal-body .location-wrap .iconfont {
         margin-right: 10px; }
 
 /* line 642, ../sass/index.scss */
