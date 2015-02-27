@@ -3,7 +3,7 @@ module.exports = function (grunt) {
         jsDir = 'js/',
         cssDir = 'css/',
         imgDir = 'imgs/',
-        libDir = 'libs/',
+        libDir = 'js/libs/',
         pageDir = '',
         buildDir = 'build/';
 
@@ -32,7 +32,6 @@ module.exports = function (grunt) {
     };
 
     // 项目配置
-    //noinspection JSUnresolvedFunction
     grunt.initConfig({
 
         pkg: grunt.file.readJSON('package.json'),
@@ -43,13 +42,13 @@ module.exports = function (grunt) {
                     {
                         expand: true,
                         cwd: baseDir + jsDir,
-                        src: '**/*.js',
+                        src: '*.js',
                         dest: buildDir + jsDir,
                         ext: '.js'
                     }
                 ],
                 options: {
-                    ASCIIOnly: true
+                    preserveComments:'some'
                 }
             }
         },
@@ -64,14 +63,24 @@ module.exports = function (grunt) {
                 flatten: true,
                 filter: 'isFile'
             },
-            libs: {
+            files: {
                 expand: true,
-                cwd: baseDir + libDir,
+                cwd: baseDir,
                 src: '*',
-                dest: buildDir + libDir,
+                dest: buildDir,
                 flatten: true,
                 filter: 'isFile'
             }
+        },
+
+        concat: {
+            options: {
+                separator: '\n',
+            },
+            dist: {
+                src: [baseDir + libDir + '*.js'],
+                dest: baseDir + jsDir + 'libs.js'
+            },
         },
 
         compass: {
@@ -123,6 +132,10 @@ module.exports = function (grunt) {
                 files: [baseDir + jsDir + '*.js']
                 // tasks: ['newer:jshint']
             },
+            concat: {
+                files: [baseDir + libDir + '*.js'],
+                tasks:['concat']
+            },
             livereload: {
                 // 我们不需要配置额外的任务，watch任务已经内建LiveReload浏览器刷新的代码片段。
                 options: {
@@ -163,10 +176,10 @@ module.exports = function (grunt) {
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
     // dev
-    grunt.registerTask('dev', ['compass:dev', 'uglify', 'copy']);
+    grunt.registerTask('dev', ['compass:dev', 'concat', 'uglify', 'copy']);
 
     // build
-    grunt.registerTask('build', ['compass:dev2', 'compass:production', 'uglify', 'copy']);
+    grunt.registerTask('build', ['compass:dev2', 'compass:production','concat', 'uglify', 'copy']);
     //默认任务为Build
     grunt.registerTask('default', ['build']);
     // livereload, 监控文件修改, 然后刷新浏览器
