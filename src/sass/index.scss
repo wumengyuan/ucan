@@ -212,7 +212,7 @@ section {
     }
 }
 #agenda {
-    height: 1140px;
+    margin-bottom: 100px;
     .title.agenda-title {
         @include ucan-sprite(agenda-title);
     }

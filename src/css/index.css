@@ -196,7 +196,7 @@ section {
 
 /* line 214, ../sass/index.scss */
 #agenda {
-  height: 1140px; }
+  margin-bottom: 100px; }
   /* line 216, ../sass/index.scss */
   #agenda .title.agenda-title {
     background-position: 0 0; }
