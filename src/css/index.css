@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* line 144, ucan/*.png */
-.ucan-sprite, .navbar .logo, .hero-wrap .hero-logo, .hero-wrap .sign-up-btn, .hero-wrap .sign-up-btn:hover, .hero-wrap .sign-up-btn:focus, .intro-wrap p .tri, #agenda .title.agenda-title, #agenda .date-wrap .day1, #agenda .date-wrap .day1.active, #agenda .date-wrap .day2, #agenda .date-wrap .day2.active, #special-guest .title.special-guest-title, #guest .title.guest-title, #partner .title.partner-title {
+.ucan-sprite, .navbar .logo, .hero-wrap .hero-logo, .hero-wrap .sign-up-btn, .hero-wrap .sign-up-btn:hover, .hero-wrap .sign-up-btn:focus, .parallax-wrap .intro-wrap p .tri, #agenda .title.agenda-title, #agenda .date-wrap .day1, #agenda .date-wrap .day1.active, #agenda .date-wrap .day2, #agenda .date-wrap .day2.active, #special-guest .title.special-guest-title, #guest .title.guest-title, #partner .title.partner-title {
   background-image: url('../imgs/ucan-s95af2db00b.png');
   background-repeat: no-repeat; }
 
@@ -174,10 +174,10 @@ section {
       background-position: 0 -658px; }
 
 /* line 194, ../sass/index.scss */
-.intro-wrap {
+.parallax-wrap .intro-wrap {
   display: block; }
   /* line 196, ../sass/index.scss */
-  .intro-wrap p {
+  .parallax-wrap .intro-wrap p {
     display: block;
     text-align: left;
     width: 667px;
@@ -186,7 +186,7 @@ section {
     line-height: 1.5em;
     font-size: 16px; }
     /* line 204, ../sass/index.scss */
-    .intro-wrap p .tri {
+    .parallax-wrap .intro-wrap p .tri {
       display: inline-block;
       width: 22px;
       height: 26px;
