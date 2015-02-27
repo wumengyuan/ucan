@@ -3,7 +3,6 @@
 @import "compass/utilities/sprites";
 
 $ucan-spacing: 5px;
-
 @import "ucan/*.png";
 
 /**
@@ -123,7 +122,7 @@ body {
     height: $navbar-h;
     background-color: #fff;
     overflow-y: scroll;
-    .logo {
+    .ucan-logo {
         float: left;
         width: 96px;
         height: 45px;
@@ -155,6 +154,21 @@ body {
         }
     }
 }
+
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+    /* Retina-specific stuff here */
+    .navbar .ucan-logo {
+        background-image: url("../imgs/ucanlogo-2x.png");
+        background-size: 100%;
+        background-position: 0 0;
+        float: left;
+        width: 96px;
+        height: 45px;
+        margin-top: 13px;
+    }
+}
 section {
     padding-top: 80px;
 }
@@ -175,7 +189,6 @@ section {
         width: 498px;
         height: 218px;
         @include ucan-sprite(hero-logo);
-        // @include transform-style(flat);
     }
     .sign-up-btn {
         display: block;
@@ -196,7 +209,7 @@ section {
     p {
         display: block;
         text-align: left;
-        width: 667px;
+        width: 673px;
         margin: 640px auto 120px;
         color:$purple;
         line-height: 1.5em;
