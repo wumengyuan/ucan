@@ -50,6 +50,11 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+.parallax-wrap {
+    display: block;
+    width: 100%;
+    height: 700px;
+}
 .bg-tri {
     position: absolute;
     left:50%;
@@ -57,9 +62,12 @@ body {
     z-index: -900;
 }
 .bg-tri-1 {
-    @extend .bg-tri;
-    top:0;
-    margin-left: -538.5px;
+    width: 1800px;
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 .bg-tri-2 {
     @extend .bg-tri;
@@ -161,8 +169,8 @@ section {
 }
 #intro {
     display: block;
+    width: 1800px;
     .hero-wrap {
-        // @include parallax(.6);
         display: block;
         position: relative;
         width: 710px;

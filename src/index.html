@@ -28,19 +28,26 @@
     </div>
   </header>
 
-  <div id="parallax">
-    <section id="intro">
-      <div class="hero-wrap">
-        <div class="hero-logo"></div>
-        <a class="sign-up-btn" href="#"></a>
-      </div>
-      <p><span class="tri"></span>“Ucan”是由淘宝UED发起组织的用户体验设计交流盛会。2015年，我们将紧扣“客户第一”的主题，发挥专业优势，引领全民参与用户体验，促进用户体验专业领域的互联互通。</p>
-    </section>
-    <img src="imgs/bg-tri-1.png" height="680" width="1077" alt="" class="bg-tri-1">
-    <img src="imgs/bg-tri-2.png" height="836" width="994" alt="" class="bg-tri-2">
-    <img src="imgs/bg-tri-3.png" height="1476" width="1101" alt="" class="bg-tri-3">
-    <img src="imgs/bg-2-hero.png" height="auto" width="100%" alt="" class="bg-2-hero">
-    <img src="imgs/bg-2-page.png" height="auto" width="100%" alt="" class="bg-2-page">
+  <div class="parallax-wrap">
+    <ul id="parallax-scene">
+      <li class="layer" data-depth="0.6">
+        <div class="bg-tri-1">
+          <img src="imgs/bg-tri-1.png" height="680" width="1077" alt="" class="">
+        </div>
+      </li>
+      <li class="layer" data-depth="0.4">
+        <img src="imgs/bg-2-hero.png" height="auto" width="1811" alt="" class="bg-2-hero">
+      </li>
+      <li class="layer" data-depth="0.2">
+        <section id="intro">
+          <div class="hero-wrap">
+            <div class="hero-logo"></div>
+            <a class="sign-up-btn" href="#"></a>
+          </div>
+          <p><span class="tri"></span>“Ucan”是由淘宝UED发起组织的用户体验设计交流盛会。2015年，我们将紧扣“客户第一”的主题，发挥专业优势，引领全民参与用户体验，促进用户体验专业领域的互联互通。</p>
+        </section>
+      </li>
+    </ul>
   </div>
   <section id="agenda">
     <div class="container">
@@ -370,37 +377,37 @@
     </div>
   </section>
 
-<div class="modal-dialog" id="popup">
-  <a href="#" class="jqmClose iconfont icon-close"></a>
-  <div class="modal-header">
-    <img src="" alt="guest-photo" width="111" height="111" class="photo">
-    <div class="name"></div>
-    <div class="title"></div>
+  <img src="imgs/bg-tri-2.png" height="836" width="994" alt="" class="bg-tri-2">
+  <img src="imgs/bg-tri-3.png" height="1476" width="1101" alt="" class="bg-tri-3">
+  <img src="imgs/bg-2-page.png" height="auto" width="100%" alt="" class="bg-2-page">
+
+  <div class="modal-dialog" id="popup">
+    <a href="#" class="jqmClose iconfont icon-close"></a>
+    <div class="modal-header">
+      <img src="" alt="guest-photo" width="111" height="111" class="photo">
+      <div class="name"></div>
+      <div class="title"></div>
+    </div>
+    <div class="modal-body">
+      <div class="intro-wrap">
+
+      </div>
+      <hr class="line">
+      <div class="topic-wrap">
+        <div class="topic"></div>
+      </div>
+      <div class="datetime-wrap">
+        <i class="iconfont icon-calendar"></i>
+        <span class="datetime"></span>
+      </div>
+      <div class="location-wrap">
+        <i class="iconfont icon-location"></i>
+        <span class="location"></span>
+      </div>
+    </div>
   </div>
-  <div class="modal-body">
-    <div class="intro-wrap">
 
-    </div>
-    <hr class="line">
-    <div class="topic-wrap">
-      <div class="topic"></div>
-    </div>
-    <div class="datetime-wrap">
-      <i class="iconfont icon-calendar"></i>
-      <span class="datetime"></span>
-    </div>
-    <div class="location-wrap">
-      <i class="iconfont icon-location"></i>
-      <span class="location"></span>
-    </div>
-  </div>
-</div>
-
-
-
-  <script src="js/jquery-min.js"></script>
-  <script src="js/singlenav.js"></script>
-  <script src="js/modal.js"></script>
+  <script src="js/libs.js"></script>
   <script src="js/index.js"></script>
 </body>
 </html>
