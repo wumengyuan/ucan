@@ -354,7 +354,7 @@
   };
 
 })( jQuery );
-/**
+/*!
  * Parallax.js
  * @author Matthew Wagerfield - @wagerfield
  * @description Creates a parallax effect between an array of layers,
