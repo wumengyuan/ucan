@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* line 144, ucan/*.png */
-.ucan-sprite, .navbar .logo, #intro .hero-logo, #intro .sign-up-btn, #intro .sign-up-btn:hover, #intro .sign-up-btn:focus, #intro p .tri, #agenda .title.agenda-title, #agenda .date-wrap .day1, #agenda .date-wrap .day1.active, #agenda .date-wrap .day2, #agenda .date-wrap .day2.active, #special-guest .title.special-guest-title, #guest .title.guest-title, #partner .title.partner-title {
+.ucan-sprite, .navbar .logo, .hero-wrap .hero-logo, .hero-wrap .sign-up-btn, .hero-wrap .sign-up-btn:hover, .hero-wrap .sign-up-btn:focus, #intro p .tri, #agenda .title.agenda-title, #agenda .date-wrap .day1, #agenda .date-wrap .day1.active, #agenda .date-wrap .day2, #agenda .date-wrap .day2.active, #special-guest .title.special-guest-title, #guest .title.guest-title, #partner .title.partner-title {
   background-image: url('../imgs/ucan-s95af2db00b.png');
   background-repeat: no-repeat; }
 
@@ -25,9 +25,9 @@ body {
 .parallax-wrap {
   display: block;
   width: 100%;
+  height: 810px;
   margin-left: auto;
-  margin-right: auto;
-  height: 700px; }
+  margin-right: auto; }
 
 /* line 60, ../sass/index.scss */
 #parallax-scene .layer {
@@ -146,19 +146,16 @@ section {
   padding-top: 80px; }
 
 /* line 172, ../sass/index.scss */
-#intro {
-  display: block; }
-  /* line 174, ../sass/index.scss */
-  #intro .hero-wrap {
-    display: block;
-    position: relative;
-    width: 710px;
-    height: 220px;
-    margin-top: 150px;
-    margin-left: auto;
-    margin-right: auto; }
-  /* line 183, ../sass/index.scss */
-  #intro .hero-logo {
+.hero-wrap {
+  display: block;
+  position: relative;
+  width: 710px;
+  height: 220px;
+  margin-top: 230px;
+  margin-left: auto;
+  margin-right: auto; }
+  /* line 180, ../sass/index.scss */
+  .hero-wrap .hero-logo {
     display: block;
     position: absolute;
     left: 0;
@@ -167,8 +164,8 @@ section {
     width: 498px;
     height: 218px;
     background-position: 0 -396px; }
-  /* line 194, ../sass/index.scss */
-  #intro .sign-up-btn {
+  /* line 191, ../sass/index.scss */
+  .hero-wrap .sign-up-btn {
     display: block;
     width: 117px;
     height: 117px;
@@ -178,17 +175,21 @@ section {
     cursor: pointer;
     background-position: 0 -780px; }
     /* line 59, ../../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
-    #intro .sign-up-btn:hover, #intro .sign-up-btn.signup-hover {
+    .hero-wrap .sign-up-btn:hover, .hero-wrap .sign-up-btn.signup-hover {
       background-position: 0 -658px; }
-    /* line 203, ../sass/index.scss */
-    #intro .sign-up-btn:hover, #intro .sign-up-btn:focus {
+    /* line 200, ../sass/index.scss */
+    .hero-wrap .sign-up-btn:hover, .hero-wrap .sign-up-btn:focus {
       background-position: 0 -658px; }
+
+/* line 205, ../sass/index.scss */
+#intro {
+  display: block; }
   /* line 207, ../sass/index.scss */
   #intro p {
     display: block;
     text-align: left;
     width: 667px;
-    margin: 200px auto 20px;
+    margin: 640px auto 120px;
     color: #0b2998;
     line-height: 1.5em;
     font-size: 16px; }

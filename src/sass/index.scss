@@ -53,9 +53,9 @@ body {
 .parallax-wrap {
     display: block;
     width: 100%;
+    height: 810px;
     margin-left: auto;
     margin-right: auto;
-    height: 700px;
 }
 #parallax-scene .layer {
     width: 100%;
@@ -169,17 +169,14 @@ body {
 section {
     padding-top: 80px;
 }
-#intro {
+.hero-wrap {
     display: block;
-    .hero-wrap {
-        display: block;
-        position: relative;
-        width: 710px;
-        height: 220px;
-        margin-top: 150px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    position: relative;
+    width: 710px;
+    height: 220px;
+    margin-top: 230px;
+    margin-left: auto;
+    margin-right: auto;
     .hero-logo {
         display: block;
         position: absolute;
@@ -204,11 +201,14 @@ section {
             @include ucan-sprite(signup-hover);
         }
     }
+}
+#intro {
+    display: block;
     p {
         display: block;
         text-align: left;
         width: 667px;
-        margin: 200px auto 20px;
+        margin: 640px auto 120px;
         color:$purple;
         line-height: 1.5em;
         font-size: $font-lg;
