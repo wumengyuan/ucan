@@ -60,52 +60,41 @@ body {
 #parallax-scene .layer {
     width: 100%;
 }
-.bg-tri {
-    position: absolute;
-    left:50%;
-    overflow:hidden;
-    z-index: -900;
-}
 .bg-tri-1 {
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 .bg-tri-2 {
-    @extend .bg-tri;
+    position: absolute;
+    left:50%;
+    overflow:hidden;
+    z-index: -900;
     top:800px;
     margin-left: -497px;
 }
 .bg-tri-3 {
-    @extend .bg-tri;
+    position: absolute;
+    left:50%;
+    overflow:hidden;
+    z-index: -900;
     top:1800px;
     margin-left: -550.5px;
 }
 .bg-2-hero {
     position: absolute;
-    left:0;
+    left:50%;
+    margin-left: -905.5px;
     top:0;
     z-index: -800;
-    max-width:1811px;
-}
-@media (min-width: 1811px) {
-    .bg-2-hero {
-        left:50%;
-        margin-left: -905.5px;
-    }
 }
 .bg-2-page {
     position: absolute;
-    left:0;
-    top:1000px;
+    left:50%;
+    margin-left: -876.5px;
+    top:1290px;
     z-index: -800;
     max-width:1753px;
-}
-@media (min-width: 1753px) {
-    .bg-2-page {
-        left:50%;
-        margin-left: -876.5px;
-    }
 }
 .container {
     width: 1000px;
@@ -202,7 +191,7 @@ section {
         }
     }
 }
-#intro {
+.intro-wrap {
     display: block;
     p {
         display: block;

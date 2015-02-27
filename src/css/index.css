@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* line 144, ucan/*.png */
-.ucan-sprite, .navbar .logo, .hero-wrap .hero-logo, .hero-wrap .sign-up-btn, .hero-wrap .sign-up-btn:hover, .hero-wrap .sign-up-btn:focus, #intro p .tri, #agenda .title.agenda-title, #agenda .date-wrap .day1, #agenda .date-wrap .day1.active, #agenda .date-wrap .day2, #agenda .date-wrap .day2.active, #special-guest .title.special-guest-title, #guest .title.guest-title, #partner .title.partner-title {
+.ucan-sprite, .navbar .logo, .hero-wrap .hero-logo, .hero-wrap .sign-up-btn, .hero-wrap .sign-up-btn:hover, .hero-wrap .sign-up-btn:focus, .intro-wrap p .tri, #agenda .title.agenda-title, #agenda .date-wrap .day1, #agenda .date-wrap .day1.active, #agenda .date-wrap .day2, #agenda .date-wrap .day2.active, #special-guest .title.special-guest-title, #guest .title.guest-title, #partner .title.partner-title {
   background-image: url('../imgs/ucan-s95af2db00b.png');
   background-repeat: no-repeat; }
 
@@ -34,61 +34,53 @@ body {
   width: 100%; }
 
 /* line 63, ../sass/index.scss */
-.bg-tri, .bg-tri-2, .bg-tri-3 {
-  position: absolute;
-  left: 50%;
-  overflow: hidden;
-  z-index: -900; }
-
-/* line 69, ../sass/index.scss */
 .bg-tri-1 {
   display: block;
   margin-left: auto;
   margin-right: auto; }
 
-/* line 74, ../sass/index.scss */
+/* line 68, ../sass/index.scss */
 .bg-tri-2 {
+  position: absolute;
+  left: 50%;
+  overflow: hidden;
+  z-index: -900;
   top: 800px;
   margin-left: -497px; }
 
-/* line 79, ../sass/index.scss */
+/* line 76, ../sass/index.scss */
 .bg-tri-3 {
+  position: absolute;
+  left: 50%;
+  overflow: hidden;
+  z-index: -900;
   top: 1800px;
   margin-left: -550.5px; }
 
 /* line 84, ../sass/index.scss */
 .bg-2-hero {
   position: absolute;
-  left: 0;
+  left: 50%;
+  margin-left: -905.5px;
   top: 0;
-  z-index: -800;
-  max-width: 1811px; }
+  z-index: -800; }
 
-@media (min-width: 1811px) {
-  /* line 92, ../sass/index.scss */
-  .bg-2-hero {
-    left: 50%;
-    margin-left: -905.5px; } }
-/* line 97, ../sass/index.scss */
+/* line 91, ../sass/index.scss */
 .bg-2-page {
   position: absolute;
-  left: 0;
-  top: 1000px;
+  left: 50%;
+  margin-left: -876.5px;
+  top: 1290px;
   z-index: -800;
   max-width: 1753px; }
 
-@media (min-width: 1753px) {
-  /* line 105, ../sass/index.scss */
-  .bg-2-page {
-    left: 50%;
-    margin-left: -876.5px; } }
-/* line 110, ../sass/index.scss */
+/* line 99, ../sass/index.scss */
 .container {
   width: 1000px;
   margin-left: auto;
   margin-right: auto;
   position: relative; }
-  /* line 115, ../sass/index.scss */
+  /* line 104, ../sass/index.scss */
   .container .title {
     display: block;
     margin-left: auto;
@@ -97,10 +89,10 @@ body {
     height: 34px; }
 
 @media (max-width: 1000px) {
-  /* line 124, ../sass/index.scss */
+  /* line 113, ../sass/index.scss */
   .container {
     width: 100%; } }
-/* line 129, ../sass/index.scss */
+/* line 118, ../sass/index.scss */
 .navbar {
   position: fixed;
   top: 0;
@@ -109,27 +101,27 @@ body {
   height: 70px;
   background-color: #fff;
   overflow-y: scroll; }
-  /* line 137, ../sass/index.scss */
+  /* line 126, ../sass/index.scss */
   .navbar .logo {
     float: left;
     width: 96px;
     height: 45px;
     margin-top: 13px;
     background-position: 0 -971px; }
-  /* line 144, ../sass/index.scss */
+  /* line 133, ../sass/index.scss */
   .navbar .nav-items {
     float: right;
     color: #555;
     font-size: 0; }
-    /* line 148, ../sass/index.scss */
+    /* line 137, ../sass/index.scss */
     .navbar .nav-items .nav-item {
       list-style: none;
       display: inline-block; }
-      /* line 151, ../sass/index.scss */
+      /* line 140, ../sass/index.scss */
       .navbar .nav-items .nav-item:hover, .navbar .nav-items .nav-item:focus, .navbar .nav-items .nav-item.active {
         color: #0b2998;
         font-weight: bold; }
-      /* line 155, ../sass/index.scss */
+      /* line 144, ../sass/index.scss */
       .navbar .nav-items .nav-item a {
         display: inline-block;
         text-align: center;
@@ -141,11 +133,11 @@ body {
         margin-left: 15px;
         color: inherit; }
 
-/* line 169, ../sass/index.scss */
+/* line 158, ../sass/index.scss */
 section {
   padding-top: 80px; }
 
-/* line 172, ../sass/index.scss */
+/* line 161, ../sass/index.scss */
 .hero-wrap {
   display: block;
   position: relative;
@@ -154,7 +146,7 @@ section {
   margin-top: 230px;
   margin-left: auto;
   margin-right: auto; }
-  /* line 180, ../sass/index.scss */
+  /* line 169, ../sass/index.scss */
   .hero-wrap .hero-logo {
     display: block;
     position: absolute;
@@ -164,7 +156,7 @@ section {
     width: 498px;
     height: 218px;
     background-position: 0 -396px; }
-  /* line 191, ../sass/index.scss */
+  /* line 180, ../sass/index.scss */
   .hero-wrap .sign-up-btn {
     display: block;
     width: 117px;
@@ -177,15 +169,15 @@ section {
     /* line 59, ../../../../.rvm/gems/ruby-2.1.3/gems/compass-core-1.0.1/stylesheets/compass/utilities/sprites/_base.scss */
     .hero-wrap .sign-up-btn:hover, .hero-wrap .sign-up-btn.signup-hover {
       background-position: 0 -658px; }
-    /* line 200, ../sass/index.scss */
+    /* line 189, ../sass/index.scss */
     .hero-wrap .sign-up-btn:hover, .hero-wrap .sign-up-btn:focus {
       background-position: 0 -658px; }
 
-/* line 205, ../sass/index.scss */
-#intro {
+/* line 194, ../sass/index.scss */
+.intro-wrap {
   display: block; }
-  /* line 207, ../sass/index.scss */
-  #intro p {
+  /* line 196, ../sass/index.scss */
+  .intro-wrap p {
     display: block;
     text-align: left;
     width: 667px;
@@ -193,8 +185,8 @@ section {
     color: #0b2998;
     line-height: 1.5em;
     font-size: 16px; }
-    /* line 215, ../sass/index.scss */
-    #intro p .tri {
+    /* line 204, ../sass/index.scss */
+    .intro-wrap p .tri {
       display: inline-block;
       width: 22px;
       height: 26px;
@@ -202,13 +194,13 @@ section {
       margin-right: 10px;
       background-position: 0 -940px; }
 
-/* line 225, ../sass/index.scss */
+/* line 214, ../sass/index.scss */
 #agenda {
   height: 1140px; }
-  /* line 227, ../sass/index.scss */
+  /* line 216, ../sass/index.scss */
   #agenda .title.agenda-title {
     background-position: 0 0; }
-  /* line 230, ../sass/index.scss */
+  /* line 219, ../sass/index.scss */
   #agenda .date-wrap {
     display: block;
     width: 406px;
@@ -218,35 +210,35 @@ section {
     margin-right: auto;
     margin-bottom: 30px;
     list-style: none; }
-    /* line 239, ../sass/index.scss */
+    /* line 228, ../sass/index.scss */
     #agenda .date-wrap li {
       display: inline-block; }
-      /* line 241, ../sass/index.scss */
+      /* line 230, ../sass/index.scss */
       #agenda .date-wrap li a {
         -moz-appearance: none;
         -webkit-appearance: none; }
-    /* line 245, ../sass/index.scss */
+    /* line 234, ../sass/index.scss */
     #agenda .date-wrap .day {
       display: inline-block;
       width: 198px;
       height: 75px; }
-    /* line 250, ../sass/index.scss */
+    /* line 239, ../sass/index.scss */
     #agenda .date-wrap .day1 {
       margin-right: 10px;
       background-position: 0 -118px; }
-      /* line 253, ../sass/index.scss */
+      /* line 242, ../sass/index.scss */
       #agenda .date-wrap .day1.active {
         background-position: 0 -38px; }
-    /* line 257, ../sass/index.scss */
+    /* line 246, ../sass/index.scss */
     #agenda .date-wrap .day2 {
       background-position: 0 -278px; }
-      /* line 259, ../sass/index.scss */
+      /* line 248, ../sass/index.scss */
       #agenda .date-wrap .day2.active {
         background-position: 0 -198px; }
-  /* line 264, ../sass/index.scss */
+  /* line 253, ../sass/index.scss */
   #agenda .timeline-wrap {
     position: relative; }
-    /* line 266, ../sass/index.scss */
+    /* line 255, ../sass/index.scss */
     #agenda .timeline-wrap .line {
       display: block;
       position: absolute;
@@ -255,7 +247,7 @@ section {
       height: 100%;
       height: calc(100% - 25px);
       border-left: 1px solid #0b2998; }
-    /* line 275, ../sass/index.scss */
+    /* line 264, ../sass/index.scss */
     #agenda .timeline-wrap .tl-circle {
       display: block;
       height: 50px;
@@ -269,7 +261,7 @@ section {
       text-align: center;
       background-color: #0b2998;
       border-radius: 50%; }
-    /* line 289, ../sass/index.scss */
+    /* line 278, ../sass/index.scss */
     #agenda .timeline-wrap .tl-dot {
       position: absolute;
       bottom: 25px;
@@ -278,7 +270,7 @@ section {
       width: 10px;
       background-color: #0b2998;
       border-radius: 50%; }
-    /* line 298, ../sass/index.scss */
+    /* line 287, ../sass/index.scss */
     #agenda .timeline-wrap .tl-mod {
       display: block;
       position: relative;
@@ -288,18 +280,18 @@ section {
       margin-left: 200px;
       margin-top: 10px;
       margin-bottom: 10px; }
-      /* line 307, ../sass/index.scss */
+      /* line 296, ../sass/index.scss */
       #agenda .timeline-wrap .tl-mod .time {
         display: inline-block;
         width: 100px;
         text-align: right;
         color: #0b2998;
         font-size: 16px; }
-      /* line 314, ../sass/index.scss */
+      /* line 303, ../sass/index.scss */
       #agenda .timeline-wrap .tl-mod .tl-dot {
         top: 20px;
         left: 105px; }
-      /* line 318, ../sass/index.scss */
+      /* line 307, ../sass/index.scss */
       #agenda .timeline-wrap .tl-mod .topic-mod {
         display: inline-block;
         vertical-align: top;
@@ -307,29 +299,29 @@ section {
         width: 455px;
         height: inherit;
         background-color: #eee; }
-        /* line 325, ../sass/index.scss */
+        /* line 314, ../sass/index.scss */
         #agenda .timeline-wrap .tl-mod .topic-mod .topic {
           float: left;
           margin-left: 20px;
           font-size: 18px;
           color: #555; }
-        /* line 331, ../sass/index.scss */
+        /* line 320, ../sass/index.scss */
         #agenda .timeline-wrap .tl-mod .topic-mod .author {
           float: right;
           margin-right: 20px;
           font-size: 12px;
           color: #909090; }
-        /* line 337, ../sass/index.scss */
+        /* line 326, ../sass/index.scss */
         #agenda .timeline-wrap .tl-mod .topic-mod:hover, #agenda .timeline-wrap .tl-mod .topic-mod:focus {
           background-color: #f6f6f6; }
-        /* line 341, ../sass/index.scss */
+        /* line 330, ../sass/index.scss */
         #agenda .timeline-wrap .tl-mod .topic-mod.light {
           background-color: #fdfdfd;
           border: 1px solid #ddd; }
-          /* line 344, ../sass/index.scss */
+          /* line 333, ../sass/index.scss */
           #agenda .timeline-wrap .tl-mod .topic-mod.light .topic {
             font-size: 14px; }
-    /* line 353, ../sass/index.scss */
+    /* line 342, ../sass/index.scss */
     #agenda .timeline-wrap .tl-mod-lg {
       display: block;
       font-size: 0;
@@ -338,7 +330,7 @@ section {
       margin-bottom: 10px;
       position: relative;
       transform-style: flat; }
-      /* line 361, ../sass/index.scss */
+      /* line 350, ../sass/index.scss */
       #agenda .timeline-wrap .tl-mod-lg .time {
         display: inline-block;
         width: 100px;
@@ -347,29 +339,29 @@ section {
         text-align: right;
         color: #0b2998;
         font-size: 16px; }
-      /* line 370, ../sass/index.scss */
+      /* line 359, ../sass/index.scss */
       #agenda .timeline-wrap .tl-mod-lg .tl-dot {
         top: 20px;
         left: 105px; }
-      /* line 374, ../sass/index.scss */
+      /* line 363, ../sass/index.scss */
       #agenda .timeline-wrap .tl-mod-lg .tab-block {
         display: inline-block;
         vertical-align: top;
         margin-left: 28px;
         width: 464px;
         font-size: 16px; }
-        /* line 380, ../sass/index.scss */
+        /* line 369, ../sass/index.scss */
         #agenda .timeline-wrap .tl-mod-lg .tab-block .tabs {
           list-style: none;
           font-size: 0; }
-          /* line 383, ../sass/index.scss */
+          /* line 372, ../sass/index.scss */
           #agenda .timeline-wrap .tl-mod-lg .tab-block .tabs li {
             display: inline-block;
             margin-right: 1px; }
-            /* line 386, ../sass/index.scss */
+            /* line 375, ../sass/index.scss */
             #agenda .timeline-wrap .tl-mod-lg .tab-block .tabs li:last-child {
               margin-right: 0; }
-            /* line 389, ../sass/index.scss */
+            /* line 378, ../sass/index.scss */
             #agenda .timeline-wrap .tl-mod-lg .tab-block .tabs li a {
               display: inline-block;
               width: 154px;
@@ -379,18 +371,18 @@ section {
               font-size: 16px;
               color: #555;
               background-color: #eee; }
-              /* line 398, ../sass/index.scss */
+              /* line 387, ../sass/index.scss */
               #agenda .timeline-wrap .tl-mod-lg .tab-block .tabs li a small {
                 font-size: 12px; }
-              /* line 401, ../sass/index.scss */
+              /* line 390, ../sass/index.scss */
               #agenda .timeline-wrap .tl-mod-lg .tab-block .tabs li a.active {
                 color: #fff;
                 background-color: #0b2998; }
-        /* line 408, ../sass/index.scss */
+        /* line 397, ../sass/index.scss */
         #agenda .timeline-wrap .tl-mod-lg .tab-block .tab-content {
           width: 464px;
           border: 1px solid #0b2998; }
-          /* line 411, ../sass/index.scss */
+          /* line 400, ../sass/index.scss */
           #agenda .timeline-wrap .tl-mod-lg .tab-block .tab-content .topic-mod {
             display: block;
             height: 43px;
@@ -398,35 +390,35 @@ section {
             width: 100%;
             border-bottom: 1px solid #ddd;
             background-color: #fdfdfd; }
-            /* line 418, ../sass/index.scss */
+            /* line 407, ../sass/index.scss */
             #agenda .timeline-wrap .tl-mod-lg .tab-block .tab-content .topic-mod:last-child {
               border-bottom: none; }
-            /* line 421, ../sass/index.scss */
+            /* line 410, ../sass/index.scss */
             #agenda .timeline-wrap .tl-mod-lg .tab-block .tab-content .topic-mod:hover, #agenda .timeline-wrap .tl-mod-lg .tab-block .tab-content .topic-mod:focus {
               background-color: #f6f6f6; }
-            /* line 424, ../sass/index.scss */
+            /* line 413, ../sass/index.scss */
             #agenda .timeline-wrap .tl-mod-lg .tab-block .tab-content .topic-mod .topic {
               float: left;
               margin-left: 20px;
               font-size: 18px;
               color: #555; }
-            /* line 430, ../sass/index.scss */
+            /* line 419, ../sass/index.scss */
             #agenda .timeline-wrap .tl-mod-lg .tab-block .tab-content .topic-mod .author {
               float: right;
               margin-right: 20px;
               font-size: 12px;
               color: #909090; }
 
-/* line 443, ../sass/index.scss */
+/* line 432, ../sass/index.scss */
 #special-guest {
   height: 644px;
   background-color: #fed939;
   color: #0b2998;
   z-index: -1000; }
-  /* line 448, ../sass/index.scss */
+  /* line 437, ../sass/index.scss */
   #special-guest .title.special-guest-title {
     background-position: 0 -902px; }
-  /* line 451, ../sass/index.scss */
+  /* line 440, ../sass/index.scss */
   #special-guest p.leading {
     display: block;
     width: 590px;
@@ -437,13 +429,13 @@ section {
     line-height: 1.5em;
     font-size: 16px;
     text-align: center; }
-  /* line 462, ../sass/index.scss */
+  /* line 451, ../sass/index.scss */
   #special-guest .guest-wrap {
     width: 945px;
     margin-left: auto;
     margin-right: auto;
     font-size: 0; }
-    /* line 467, ../sass/index.scss */
+    /* line 456, ../sass/index.scss */
     #special-guest .guest-wrap .guest {
       display: inline-block;
       width: 235px;
@@ -451,7 +443,7 @@ section {
       margin-right: 1px;
       background-color: #f6f6f6;
       position: relative; }
-      /* line 474, ../sass/index.scss */
+      /* line 463, ../sass/index.scss */
       #special-guest .guest-wrap .guest .mask {
         position: absolute;
         display: none;
@@ -462,65 +454,65 @@ section {
         text-align: center;
         background-color: #25bff8;
         background-color: rgba(37, 191, 248, 0.8); }
-        /* line 484, ../sass/index.scss */
+        /* line 473, ../sass/index.scss */
         #special-guest .guest-wrap .guest .mask .name {
           font-size: 18px;
           margin-top: 10px;
           margin-bottom: 10px; }
-        /* line 489, ../sass/index.scss */
+        /* line 478, ../sass/index.scss */
         #special-guest .guest-wrap .guest .mask .intro {
           font-size: 14px; }
-      /* line 494, ../sass/index.scss */
+      /* line 483, ../sass/index.scss */
       #special-guest .guest-wrap .guest:hover .mask, #special-guest .guest-wrap .guest:focus .mask {
         display: block; }
 
-/* line 507, ../sass/index.scss */
+/* line 496, ../sass/index.scss */
 #guest .title.guest-title {
   background-position: 0 -358px; }
-/* line 510, ../sass/index.scss */
+/* line 499, ../sass/index.scss */
 #guest .guest-wrap {
   width: 845px;
   margin-left: auto;
   margin-right: auto;
   font-size: 0; }
-  /* line 515, ../sass/index.scss */
+  /* line 504, ../sass/index.scss */
   #guest .guest-wrap.narrow {
     width: 665px; }
-/* line 519, ../sass/index.scss */
+/* line 508, ../sass/index.scss */
 #guest .guest-mod {
   display: inline-block;
   margin-top: 50px;
   margin-right: 48px;
   text-align: center; }
-  /* line 524, ../sass/index.scss */
+  /* line 513, ../sass/index.scss */
   #guest .guest-mod:last-child {
     margin-right: 0; }
-  /* line 527, ../sass/index.scss */
+  /* line 516, ../sass/index.scss */
   #guest .guest-mod .avatar {
     display: block;
     width: 130px;
     height: 130px;
     border-radius: 50%;
     background-color: #f6f6f6; }
-  /* line 534, ../sass/index.scss */
+  /* line 523, ../sass/index.scss */
   #guest .guest-mod .name {
     font-size: 16px;
     margin-top: 20px;
     margin-bottom: 10px; }
-  /* line 540, ../sass/index.scss */
+  /* line 529, ../sass/index.scss */
   #guest .guest-mod .intro {
     font-size: 12px; }
 
-/* line 547, ../sass/index.scss */
+/* line 536, ../sass/index.scss */
 #partner .title.partner-title {
   background-position: 0 -619px;
   margin-bottom: 40px; }
-/* line 551, ../sass/index.scss */
+/* line 540, ../sass/index.scss */
 #partner .partner-wrap {
   padding-left: 25px;
   padding-right: 25px;
   font-size: 0; }
-/* line 556, ../sass/index.scss */
+/* line 545, ../sass/index.scss */
 #partner .partner-logo {
   display: inline-block;
   width: 120px;
@@ -529,18 +521,18 @@ section {
   background-color: #fed939;
   -webkit-filter: grayscale(1);
   filter: grayscale(1); }
-  /* line 563, ../sass/index.scss */
+  /* line 552, ../sass/index.scss */
   #partner .partner-logo:hover {
     -webkit-filter: grayscale(0);
     filter: grayscale(0); }
-  /* line 566, ../sass/index.scss */
+  /* line 555, ../sass/index.scss */
   #partner .partner-logo:last-child {
     margin-right: 0; }
 
 /**
  * Modal
  */
-/* line 575, ../sass/index.scss */
+/* line 564, ../sass/index.scss */
 .modal-dialog {
   display: none;
   position: fixed;
@@ -552,7 +544,7 @@ section {
   background: #FFF;
   color: #555;
   border: 6px solid #0b2998; }
-  /* line 588, ../sass/index.scss */
+  /* line 577, ../sass/index.scss */
   .modal-dialog .jqmClose {
     color: #fff;
     position: absolute;
@@ -560,65 +552,65 @@ section {
     top: 20px;
     font-size: 32px;
     z-index: 10; }
-  /* line 596, ../sass/index.scss */
+  /* line 585, ../sass/index.scss */
   .modal-dialog .modal-header {
     height: 111px;
     background-color: #fed939;
     position: relative;
     padding-left: 160px; }
-    /* line 601, ../sass/index.scss */
+    /* line 590, ../sass/index.scss */
     .modal-dialog .modal-header .photo {
       position: absolute;
       border-radius: 50%;
       top: 20px;
       left: 40px;
       background-color: #f6f6f6; }
-    /* line 608, ../sass/index.scss */
+    /* line 597, ../sass/index.scss */
     .modal-dialog .modal-header .name {
       padding-top: 45px;
       margin-bottom: 10px;
       font-size: 18px; }
-    /* line 613, ../sass/index.scss */
+    /* line 602, ../sass/index.scss */
     .modal-dialog .modal-header .title {
       font-size: 14px; }
-  /* line 617, ../sass/index.scss */
+  /* line 606, ../sass/index.scss */
   .modal-dialog .modal-body {
     padding: 40px; }
-    /* line 619, ../sass/index.scss */
+    /* line 608, ../sass/index.scss */
     .modal-dialog .modal-body .intro-wrap {
       margin-bottom: 25px; }
-      /* line 621, ../sass/index.scss */
+      /* line 610, ../sass/index.scss */
       .modal-dialog .modal-body .intro-wrap p {
         text-indent: 2em;
         line-height: 1.8em;
         font-size: 14px; }
-    /* line 627, ../sass/index.scss */
+    /* line 616, ../sass/index.scss */
     .modal-dialog .modal-body .topic-wrap {
       margin-bottom: 25px; }
-      /* line 629, ../sass/index.scss */
+      /* line 618, ../sass/index.scss */
       .modal-dialog .modal-body .topic-wrap .topic {
         margin-top: 20px;
         margin-bottom: 10px;
         font-size: 18px; }
-      /* line 634, ../sass/index.scss */
+      /* line 623, ../sass/index.scss */
       .modal-dialog .modal-body .topic-wrap p {
         line-height: 1.8em;
         font-size: 14px; }
-    /* line 639, ../sass/index.scss */
+    /* line 628, ../sass/index.scss */
     .modal-dialog .modal-body .datetime-wrap {
       margin-top: 10px;
       font-size: 14px; }
-      /* line 640, ../sass/index.scss */
+      /* line 629, ../sass/index.scss */
       .modal-dialog .modal-body .datetime-wrap .iconfont {
         margin-right: 10px; }
-    /* line 646, ../sass/index.scss */
+    /* line 635, ../sass/index.scss */
     .modal-dialog .modal-body .location-wrap {
       margin-top: 10px;
       font-size: 14px; }
-      /* line 647, ../sass/index.scss */
+      /* line 636, ../sass/index.scss */
       .modal-dialog .modal-body .location-wrap .iconfont {
         margin-right: 10px; }
 
-/* line 656, ../sass/index.scss */
+/* line 645, ../sass/index.scss */
 .jqmOverlay {
   background-color: #fff; }
