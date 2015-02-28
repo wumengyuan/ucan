@@ -497,13 +497,13 @@ section {
                 .name {
                     font-size: $font-xlg;
                     margin-top: 10px;
-                    margin-bottom: 10px;
+                    margin-bottom: 8px;
                 }
                 .intro {
-                    width: 80%;
-                    margin-left: auto;
-                    margin-right: auto;
-                    font-size: $font-md;
+                    // width: 80%;
+                    // margin-left: auto;
+                    // margin-right: auto;
+                    font-size: $font-sm;
                 }
             }
             &:hover, &:focus {
@@ -512,19 +512,19 @@ section {
                 }
             }
             &.guest-1 {
-                background-image: url(../imgs/guest/guest-s-James-Landay-2x.png);
+                background-image: url(http://gtms01.alicdn.com/tps/i1/TB1L.RHHpXXXXaZXXXXUUuLRFXX-376-582.jpg);
             }
             &.guest-2 {
-                background-image: url(../imgs/guest/guest-s-tangmu-2x.png);
+                background-image: url(http://gtms04.alicdn.com/tps/i4/TB1H_BGHpXXXXccXXXXUUuLRFXX-376-582.jpg);
             }
             &.guest-3 {
-                background-image: url(../imgs/guest/guest-s-Willy-Lai-2x.png);
+                background-image: url(http://gtms03.alicdn.com/tps/i3/TB1UDxDHpXXXXbCXpXXUUuLRFXX-376-582.jpg);
             }
             &.guest-4 {
-                background-image: url(../imgs/guest/guest-s-xuyingqing-2x.png);
+                background-image: url(http://gtms04.alicdn.com/tps/i4/TB1E5lIHpXXXXXIXXXXUUuLRFXX-376-582.jpg);
             }
             &.guest-5 {
-                background-image: url(../imgs/guest/guest-s-yinshengyuan-2x.png);
+                background-image: url(http://gtms02.alicdn.com/tps/i2/TB1Y.REHpXXXXaZXpXXUUuLRFXX-376-582.jpg);
             }
 
         }
@@ -564,9 +564,8 @@ section {
         }
         .name {
             font-size: $font-lg;
-            // font-weight: bold;
             margin-top: 20px;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
         .intro {
             font-size: $font-sm;
