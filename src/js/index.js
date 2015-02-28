@@ -70,10 +70,8 @@ $(document).ready(function() {
                 detail = '';
             $.each(info.speakers, function(index, val) {
                  if (id === val.id) {
-                    console.log($photo.src);
-                    console.log(val.img);
+
                     $photo.attr('src', val.img);
-                    console.log($photo.src);
 
                     for (var key in val) {
                         if (val.hasOwnProperty(key)) {
