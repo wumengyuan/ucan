@@ -5,6 +5,9 @@
 $ucan-spacing: 5px;
 @import "ucan/*.png";
 
+// $partner-spacing: 5px;
+// @import "partner/*.png";
+
 /**
  * varibles
  */
@@ -568,7 +571,6 @@ section {
         width: 120px;
         height: 50px;
         margin-right: 17px;
-        background-color: $yellow;
         @include filter(grayscale(1));
         &:hover {
             @include filter(grayscale(0));
