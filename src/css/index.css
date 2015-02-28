@@ -557,10 +557,12 @@ section {
   margin-left: -349px;
   text-align: left;
   width: 698px;
+  max-height: 600px;
   background: #FFF;
   color: #555;
-  border: 6px solid #0b2998; }
-  /* line 598, ../sass/index.scss */
+  border: 6px solid #0b2998;
+  overflow: auto; }
+  /* line 600, ../sass/index.scss */
   .modal-dialog .jqmClose {
     color: #fff;
     position: absolute;
@@ -568,65 +570,65 @@ section {
     top: 20px;
     font-size: 32px;
     z-index: 10; }
-  /* line 606, ../sass/index.scss */
+  /* line 608, ../sass/index.scss */
   .modal-dialog .modal-header {
     height: 111px;
     background-color: #fed939;
     position: relative;
     padding-left: 160px; }
-    /* line 611, ../sass/index.scss */
+    /* line 613, ../sass/index.scss */
     .modal-dialog .modal-header .photo {
       position: absolute;
       border-radius: 50%;
       top: 20px;
       left: 40px;
       background-color: #f6f6f6; }
-    /* line 618, ../sass/index.scss */
+    /* line 620, ../sass/index.scss */
     .modal-dialog .modal-header .name {
       padding-top: 45px;
       margin-bottom: 10px;
       font-size: 18px; }
-    /* line 623, ../sass/index.scss */
+    /* line 625, ../sass/index.scss */
     .modal-dialog .modal-header .title {
       font-size: 14px; }
-  /* line 627, ../sass/index.scss */
+  /* line 629, ../sass/index.scss */
   .modal-dialog .modal-body {
     padding: 40px; }
-    /* line 629, ../sass/index.scss */
+    /* line 631, ../sass/index.scss */
     .modal-dialog .modal-body .intro-wrap {
       margin-bottom: 25px; }
-      /* line 631, ../sass/index.scss */
+      /* line 633, ../sass/index.scss */
       .modal-dialog .modal-body .intro-wrap p {
         text-indent: 2em;
         line-height: 1.8em;
         font-size: 14px; }
-    /* line 637, ../sass/index.scss */
+    /* line 639, ../sass/index.scss */
     .modal-dialog .modal-body .topic-wrap {
       margin-bottom: 25px; }
-      /* line 639, ../sass/index.scss */
+      /* line 641, ../sass/index.scss */
       .modal-dialog .modal-body .topic-wrap .topic {
         margin-top: 20px;
         margin-bottom: 10px;
         font-size: 18px; }
-      /* line 644, ../sass/index.scss */
+      /* line 646, ../sass/index.scss */
       .modal-dialog .modal-body .topic-wrap p {
         line-height: 1.8em;
         font-size: 14px; }
-    /* line 649, ../sass/index.scss */
+    /* line 651, ../sass/index.scss */
     .modal-dialog .modal-body .datetime-wrap {
       margin-top: 10px;
       font-size: 14px; }
-      /* line 650, ../sass/index.scss */
+      /* line 652, ../sass/index.scss */
       .modal-dialog .modal-body .datetime-wrap .iconfont {
         margin-right: 10px; }
-    /* line 656, ../sass/index.scss */
+    /* line 658, ../sass/index.scss */
     .modal-dialog .modal-body .location-wrap {
       margin-top: 10px;
       font-size: 14px; }
-      /* line 657, ../sass/index.scss */
+      /* line 659, ../sass/index.scss */
       .modal-dialog .modal-body .location-wrap .iconfont {
         margin-right: 10px; }
 
-/* line 666, ../sass/index.scss */
+/* line 668, ../sass/index.scss */
 .jqmOverlay {
   background-color: #fff; }

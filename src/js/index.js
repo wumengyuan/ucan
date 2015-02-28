@@ -62,7 +62,7 @@ $(document).ready(function() {
 
         var $popup = $('#popup'),$popupErr = $('#popupErr');
         var $introWrap = $popup.find('.intro-wrap'),
-            $detailWrap = $popup.find('.topic-wrap'),
+            $detailWrap = $popup.find('.detail-wrap'),
             $photo = $popup.find('.photo');
 
         $.getJSON( "data.json", function( info ) {
@@ -75,7 +75,6 @@ $(document).ready(function() {
                     for (var key in val) {
                         if (val.hasOwnProperty(key)) {
                             if (key !== 'id' || key!== 'intro' || key!== 'topic') {
-                                // console.log(key,val[key]);
                                 $popup.find('.'+key).text(val[key]);
                             };
                         }
@@ -92,13 +91,6 @@ $(document).ready(function() {
                     $detailWrap.html(detail);
                 }
             });
-            if (!isExist) {
-                $popupErr.jqm({
-                    toTop: true,
-                    closeOnEsc: true,
-                    trigger: ".modal-trigger"
-                });
-            };
         });
     });
 
