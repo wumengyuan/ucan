@@ -478,11 +478,12 @@ section {
         font-size: 0;
         .guest {
             display: inline-block;
-            width: 235px;
+            width: 188px;
             height: 291px;
             margin-right: 1px;
             background-color: $light-gray-bg;
             position: relative;
+            background-size: 100%;
             .mask {
                 position: absolute;
                 display: none;
@@ -506,6 +507,21 @@ section {
                 .mask {
                     display: block;
                 }
+            }
+            &.guest-1 {
+                background-image: url(../imgs/guest/guest-s-James-Landay-2x.png);
+            }
+            &.guest-2 {
+                background-image: url(../imgs/guest/guest-s-tangmu-2x.png);
+            }
+            &.guest-3 {
+                background-image: url(../imgs/guest/guest-s-Willy-Lai-2x.png);
+            }
+            &.guest-4 {
+                background-image: url(../imgs/guest/guest-s-xuyingqing-2x.png);
+            }
+            &.guest-5 {
+                background-image: url(../imgs/guest/guest-s-yinshengyuan-2x.png);
             }
 
         }
@@ -571,10 +587,10 @@ section {
         width: 120px;
         height: 50px;
         margin-right: 17px;
-        @include filter(grayscale(1));
-        &:hover {
-            @include filter(grayscale(0));
-        }
+        // @include filter(grayscale(1));
+        // &:hover {
+        //     @include filter(grayscale(0));
+        // }
         &:last-child {
             margin-right: 0;
         }
