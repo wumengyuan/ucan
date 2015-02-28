@@ -43,6 +43,7 @@ body {
     font-family: $sansFontFamily;
     margin-bottom: 120px;
     background-color: $white-bg;
+    overflow-x: hidden;
 }
 #parallax {
     display: block;
@@ -335,7 +336,7 @@ section {
                     font-size: $font-xlg;
                     color:$dark-gray;
                 }
-                .author {
+                .name {
                     float: right;
                     margin-right: 20px;
                     font-size: $font-sm;
@@ -351,6 +352,7 @@ section {
                     .topic {
                         font-size: $font-md;
                     }
+                    // no hover effect
                     &:hover, &:focus {
                         // background-color: $light-gray-bg;
                     }
@@ -434,7 +436,7 @@ section {
                             font-size: $font-xlg;
                             color:$dark-gray;
                         }
-                        .author {
+                        .name {
                             float: right;
                             margin-right: 20px;
                             font-size: $font-sm;
@@ -556,6 +558,7 @@ section {
         margin-bottom: 40px;
     }
     .partner-wrap {
+        margin-bottom: 20px;
         padding-left: 25px;
         padding-right: 25px;
         font-size: 0;

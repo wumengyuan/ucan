@@ -52,7 +52,6 @@ $(document).ready(function() {
             closeOnEsc: true,
             trigger: trigger
         });
-
     });
 
     // dialog content
@@ -61,7 +60,7 @@ $(document).ready(function() {
 
         var id = $(this).data('id');
 
-        var $popup = $('#popup');
+        var $popup = $('#popup'),$popupErr = $('#popupErr');
         var $introWrap = $popup.find('.intro-wrap'),
             $detailWrap = $popup.find('.topic-wrap'),
             $photo = $popup.find('.photo');
@@ -71,7 +70,6 @@ $(document).ready(function() {
                 detail = '';
             $.each(info.speakers, function(index, val) {
                  if (id === val.id) {
-
                     $photo.src = val.img;
 
                     for (var key in val) {
@@ -94,6 +92,13 @@ $(document).ready(function() {
                     $detailWrap.html(detail);
                 }
             });
+            if (!isExist) {
+                $popupErr.jqm({
+                    toTop: true,
+                    closeOnEsc: true,
+                    trigger: ".modal-trigger"
+                });
+            };
         });
     });
 
