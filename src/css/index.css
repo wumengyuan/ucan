@@ -477,87 +477,90 @@ section {
           margin-bottom: 10px; }
         /* line 502, ../sass/index.scss */
         #special-guest .guest-wrap .guest .mask .intro {
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto;
           font-size: 14px; }
-      /* line 507, ../sass/index.scss */
+      /* line 510, ../sass/index.scss */
       #special-guest .guest-wrap .guest:hover .mask, #special-guest .guest-wrap .guest:focus .mask {
         display: block; }
-      /* line 511, ../sass/index.scss */
+      /* line 514, ../sass/index.scss */
       #special-guest .guest-wrap .guest.guest-1 {
         background-image: url(../imgs/guest/guest-s-James-Landay-2x.png); }
-      /* line 514, ../sass/index.scss */
+      /* line 517, ../sass/index.scss */
       #special-guest .guest-wrap .guest.guest-2 {
         background-image: url(../imgs/guest/guest-s-tangmu-2x.png); }
-      /* line 517, ../sass/index.scss */
+      /* line 520, ../sass/index.scss */
       #special-guest .guest-wrap .guest.guest-3 {
         background-image: url(../imgs/guest/guest-s-Willy-Lai-2x.png); }
-      /* line 520, ../sass/index.scss */
+      /* line 523, ../sass/index.scss */
       #special-guest .guest-wrap .guest.guest-4 {
         background-image: url(../imgs/guest/guest-s-xuyingqing-2x.png); }
-      /* line 523, ../sass/index.scss */
+      /* line 526, ../sass/index.scss */
       #special-guest .guest-wrap .guest.guest-5 {
         background-image: url(../imgs/guest/guest-s-yinshengyuan-2x.png); }
 
-/* line 535, ../sass/index.scss */
+/* line 538, ../sass/index.scss */
 #guest .title.guest-title {
   background-position: 0 -358px; }
-/* line 538, ../sass/index.scss */
+/* line 541, ../sass/index.scss */
 #guest .guest-wrap {
   width: 845px;
   margin-left: auto;
   margin-right: auto;
   font-size: 0; }
-  /* line 543, ../sass/index.scss */
+  /* line 546, ../sass/index.scss */
   #guest .guest-wrap.narrow {
     width: 665px; }
-/* line 547, ../sass/index.scss */
+/* line 550, ../sass/index.scss */
 #guest .guest-mod {
   display: inline-block;
   margin-top: 50px;
   margin-right: 48px;
   text-align: center; }
-  /* line 552, ../sass/index.scss */
+  /* line 555, ../sass/index.scss */
   #guest .guest-mod:last-child {
     margin-right: 0; }
-  /* line 555, ../sass/index.scss */
+  /* line 558, ../sass/index.scss */
   #guest .guest-mod .avatar {
     display: block;
     width: 130px;
     height: 130px;
     border-radius: 50%;
     background-color: #f6f6f6; }
-  /* line 562, ../sass/index.scss */
+  /* line 565, ../sass/index.scss */
   #guest .guest-mod .name {
     font-size: 16px;
     margin-top: 20px;
     margin-bottom: 10px; }
-  /* line 568, ../sass/index.scss */
+  /* line 571, ../sass/index.scss */
   #guest .guest-mod .intro {
     font-size: 12px; }
 
-/* line 575, ../sass/index.scss */
+/* line 578, ../sass/index.scss */
 #partner .title.partner-title {
   background-position: 0 -619px;
   margin-bottom: 40px; }
-/* line 579, ../sass/index.scss */
+/* line 582, ../sass/index.scss */
 #partner .partner-wrap {
   margin-bottom: 20px;
   padding-left: 25px;
   padding-right: 25px;
   font-size: 0; }
-/* line 585, ../sass/index.scss */
+/* line 588, ../sass/index.scss */
 #partner .partner-logo {
   display: inline-block;
   width: 120px;
   height: 50px;
   margin-right: 17px; }
-  /* line 594, ../sass/index.scss */
+  /* line 597, ../sass/index.scss */
   #partner .partner-logo:last-child {
     margin-right: 0; }
 
 /**
  * Modal
  */
-/* line 603, ../sass/index.scss */
+/* line 606, ../sass/index.scss */
 .modal-dialog {
   display: none;
   position: fixed;
@@ -571,7 +574,7 @@ section {
   color: #555;
   border: 6px solid #0b2998;
   overflow: auto; }
-  /* line 618, ../sass/index.scss */
+  /* line 621, ../sass/index.scss */
   .modal-dialog .jqmClose {
     color: #fff;
     position: absolute;
@@ -579,65 +582,65 @@ section {
     top: 20px;
     font-size: 32px;
     z-index: 10; }
-  /* line 626, ../sass/index.scss */
+  /* line 629, ../sass/index.scss */
   .modal-dialog .modal-header {
     height: 111px;
     background-color: #fed939;
     position: relative;
     padding-left: 160px; }
-    /* line 631, ../sass/index.scss */
+    /* line 634, ../sass/index.scss */
     .modal-dialog .modal-header .photo {
       position: absolute;
       border-radius: 50%;
       top: 20px;
       left: 40px;
       background-color: #f6f6f6; }
-    /* line 638, ../sass/index.scss */
+    /* line 641, ../sass/index.scss */
     .modal-dialog .modal-header .name {
       padding-top: 45px;
       margin-bottom: 10px;
       font-size: 18px; }
-    /* line 643, ../sass/index.scss */
+    /* line 646, ../sass/index.scss */
     .modal-dialog .modal-header .title {
       font-size: 14px; }
-  /* line 647, ../sass/index.scss */
+  /* line 650, ../sass/index.scss */
   .modal-dialog .modal-body {
     padding: 40px; }
-    /* line 649, ../sass/index.scss */
+    /* line 652, ../sass/index.scss */
     .modal-dialog .modal-body .intro-wrap {
       margin-bottom: 25px; }
-      /* line 651, ../sass/index.scss */
+      /* line 654, ../sass/index.scss */
       .modal-dialog .modal-body .intro-wrap p {
         text-indent: 2em;
         line-height: 1.8em;
         font-size: 14px; }
-    /* line 657, ../sass/index.scss */
+    /* line 660, ../sass/index.scss */
     .modal-dialog .modal-body .topic-wrap {
       margin-bottom: 25px; }
-      /* line 659, ../sass/index.scss */
+      /* line 662, ../sass/index.scss */
       .modal-dialog .modal-body .topic-wrap .topic {
         margin-top: 20px;
         margin-bottom: 10px;
         font-size: 18px; }
-      /* line 664, ../sass/index.scss */
+      /* line 667, ../sass/index.scss */
       .modal-dialog .modal-body .topic-wrap p {
         line-height: 1.8em;
         font-size: 14px; }
-    /* line 669, ../sass/index.scss */
+    /* line 672, ../sass/index.scss */
     .modal-dialog .modal-body .datetime-wrap {
       margin-top: 10px;
       font-size: 14px; }
-      /* line 670, ../sass/index.scss */
+      /* line 673, ../sass/index.scss */
       .modal-dialog .modal-body .datetime-wrap .iconfont {
         margin-right: 10px; }
-    /* line 676, ../sass/index.scss */
+    /* line 679, ../sass/index.scss */
     .modal-dialog .modal-body .location-wrap {
       margin-top: 10px;
       font-size: 14px; }
-      /* line 677, ../sass/index.scss */
+      /* line 680, ../sass/index.scss */
       .modal-dialog .modal-body .location-wrap .iconfont {
         margin-right: 10px; }
 
-/* line 686, ../sass/index.scss */
+/* line 689, ../sass/index.scss */
 .jqmOverlay {
   background-color: #fff; }
