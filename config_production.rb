@@ -5,7 +5,7 @@
 css_dir = 'build/css/'
 sass_dir = 'src/sass/'
 javascripts_dir = 'build/js/'
-images_dir = 'src/imgs/'
+images_dir = 'build/imgs/'
 
 
 # You can select your preferred output style here (can be overridden via the command line):
@@ -13,7 +13,7 @@ images_dir = 'src/imgs/'
 output_style = :compressed
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
-# relative_assets = false
+relative_assets = true
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
 # line_comments = false

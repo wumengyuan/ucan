@@ -58,9 +58,8 @@ module.exports = function (grunt) {
             images: {
                 expand: true,
                 cwd: baseDir + imgDir,
-                src: '*',
+                src: '**/*',
                 dest: buildDir + imgDir,
-                flatten: true,
                 filter: 'isFile'
             },
             files: {
@@ -191,7 +190,7 @@ module.exports = function (grunt) {
     grunt.registerTask('dev', ['compass:dev', 'concat', 'uglify', 'copy']);
 
     // build
-    grunt.registerTask('build', ['compass:dev2', 'compass:production','concat', 'uglify', 'copy','jsonmin']);
+    grunt.registerTask('build', ['copy', 'compass:dev2', 'compass:production','concat', 'uglify', 'jsonmin']);
     //默认任务为Build
     grunt.registerTask('default', ['build']);
     // livereload, 监控文件修改, 然后刷新浏览器
