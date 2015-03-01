@@ -60,8 +60,6 @@ body {
     margin-left: auto;
     margin-right: auto;
     #parallax-scene {
-        tranform-style:flat !important;
-        backface-visibility:visible;
         .layer {
             width: 100%;
         }
@@ -604,15 +602,13 @@ section {
  */
 .modal-dialog {
     display: none;
-    // display: block;
     position: fixed;
     left: 50%;
     top:10%;
     margin-left: -349px;
-    // margin-top: -321px;
     text-align: left;
     width: 698px;
-    max-height: 650px;
+    max-height: 90%;
     background: #FFF;
     color:$dark-gray;
     border:6px solid $purple;

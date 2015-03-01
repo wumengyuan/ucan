@@ -169,6 +169,18 @@ module.exports = function (grunt) {
                     module: true
                 }
             }
+        },
+
+        jsonmin: {
+            dev: {
+                options: {
+                    // stripWhitespace: true || false,
+                    // stripComments: true || false
+                },
+                files: {
+                    "build/data.json" : "src/data.json"
+                }
+            }
         }
     });
 
@@ -179,7 +191,7 @@ module.exports = function (grunt) {
     grunt.registerTask('dev', ['compass:dev', 'concat', 'uglify', 'copy']);
 
     // build
-    grunt.registerTask('build', ['compass:dev2', 'compass:production','concat', 'uglify', 'copy']);
+    grunt.registerTask('build', ['compass:dev2', 'compass:production','concat', 'uglify', 'copy','jsonmin']);
     //默认任务为Build
     grunt.registerTask('default', ['build']);
     // livereload, 监控文件修改, 然后刷新浏览器
