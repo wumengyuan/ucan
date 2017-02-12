@@ -5,7 +5,7 @@ module.exports = function (grunt) {
         imgDir = 'imgs/',
         libDir = 'js/libs/',
         pageDir = '',
-        buildDir = 'build/';
+        buildDir = 'docs/';
 
 
     // LiveReload的默认端口号，你也可以改成你想要的端口号
